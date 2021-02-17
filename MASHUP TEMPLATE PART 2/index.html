@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /*********************header satrt************************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 8vh;
+        width: 100%;
+        background-image: url(images/wave-header.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+      }
+      #logo {
+        height: 8vh;
+        width: 300px;
+        position: absolute;
+        left: 10%;
+        line-height: 8vh;
+      }
+      nav {
+        height: 8vh;
+        width: 70%;
+        position: absolute;
+        right: 10%;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        background-color: royalblue;
+        line-height: 8vh;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: royalblue;
+        background-color: whitesmoke;
+      }
+      /***********************************banner satrt********************/
+      .banner {
+        height: 75vh;
+        width: 100%;
+        text-align: center;
+        padding-top: 180px;
+        background-image: url(images/wave-hero-background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .banner h1 {
+        font-size: 60px;
+        color: whitesmoke;
+      }
+      .banner p {
+        font-size: 20px;
+        margin-top: 30px;
+        color: whitesmoke;
+        font-weight: 700;
+      }
+      .banner button {
+        padding: 1% 2%;
+        margin-top: 30px;
+        background-color: whitesmoke;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .banner button:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /************************medium start*******************/
+      .medium {
+        padding: 2% 0%;
+        width: 60%;
+        margin: auto;
+        text-align: center;
+      }
+      .medium h1 {
+        font-size: 40px;
+        padding: 3%;
+      }
+      .medium p {
+        font-size: 20px;
+        line-height: 1.4;
+        padding: 0% 10% 2% 10%;
+      }
+      .image_Container {
+        height: 60vh;
+        border: 1px solid black;
+        width: 70%;
+        background-image: url(images/con1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .text_container {
+        height: 68vh;
+        width: 100%;
+        position: absolute;
+        bottom: -30vh;
+        right: -40%;
+        background-color: rgba(0, 0, 0, 0.568);
+        color: whitesmoke;
+      }
+      .text_container h1 {
+        margin-top: 50px;
+      }
+      .text_container p {
+        margin-top: 60px;
+      }
+      .text_container button {
+        padding: 2% 3%;
+        margin-top: 20px;
+      }
+      /****************card start********************/
+      #padding_top_h1 {
+        padding-top: 30%;
+      }
+      .card {
+        height: 75vh;
+        width: 32.66%;
+        background-color: yellow;
+        padding: 2% 0%;
+        overflow: hidden;
+        position: relative;
+      }
+      .image_section_card {
+        height: 30vh;
+        width: 80%;
+        margin: auto;
+      }
+      .card ul {
+        list-style-type: none;
+      }
+      .card h1 {
+        padding: 10% 0%;
+      }
+      .card_navigatino {
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+      }
+      .card_navigatino ul {
+        list-style-type: none;
+        text-align: center;
+      }
+      .card_navigatino ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .card_navigatino ul li a {
+        text-decoration: none;
+        padding: 3% 2%;
+        line-height: 80px;
+      }
+      .card_navigatino ul li a i {
+        color: royalblue;
+        font-size: 40px;
+      }
+      .card_navigatino ul li a i:hover {
+        color: red;
+      }
+      /*****************************customers start********************/
+      .loogo_div {
+        height: 20vh;
+        width: 32.66%;
+        padding: 5%;
+        border: 1px solid black;
+      }
+      /***********************form_section**************************/
+      .form_section {
+        height: 60vh;
+        width: 100%;
+        background-color: lightpink;
+        border: 1px solid sblack;
+      }
+      .leftcontainer {
+        height: 100%;
+        width: 50%;
+        background-color: lightsalmon;
+      }
+      .leftcontainer ul {
+        list-style-type: none;
+        margin-top: 100px;
+        text-align: left;
+        margin-left: 10%;
+      }
+      .leftcontainer ul li {
+        line-height: 2;
+        font-size: 20px;
+      }
+      .leftcontainer input {
+        height: 50px;
+        width: 95%;
+        margin-top: 20px;
+      }
+      textarea {
+        height: 30vh;
+        width: 95%;
+      }
+      #btnn {
+        width: 30%;
+      }
+      /************************footer satrt**************************/
+      footer {
+        height: 25vh;
+        width: 100%;
+        padding: 0% 20%;
+        padding-top: 100px;
+        color: whitesmoke;
+        position: relative;
+        background-image: url(images/wave-footer.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      footer h1 {
+        padding: 0% 0% 1% 0%;
+      }
+      footer p {
+        font-size: 20px;
+      }
+      .footer_navigation {
+        height: 8vh;
+        width: 50%;
+        position: absolute;
+        right: 20%;
+        top: 10vh;
+      }
+      .footer_navigation ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      .footer_navigation ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .footer_navigation ul li a {
+        text-decoration: none;
+      }
+      .footer_navigation ul li a i {
+        color: whitesmoke;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-----------------header satrt-->
+    <header>
+      <section id="logo">
+        <h1>
+          <i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;Mashup Template
+        </h1>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--------------------banner start-->
+    <section class="banner">
+      <h1>Mountain</h1>
+      <p>WELCOME TO MOUNTAIN WEBSITE. AGENCY IN BERLIN.</p>
+      <button>Discover</button>
+    </section>
+    <!----------------medium start-->
+    <section class="medium">
+      <h1>About Us</h1>
+      <p>
+        orem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus
+        at sem quis varius. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos himenaeos. Phasellus iaculis magna sagittis
+        elit sagittis, at hendrerit lorem venenatis. Morbi accumsan iaculis
+        blandit. Cras ultrices hendrerit nisl.
+      </p>
+      <section class="image_Container">
+        <section class="text_container">
+          <h1>Lbortis</h1>
+          <p>
+            Sed id tellus in risus pre tium imperdiet eu lobortis dolor. Sed
+            pellentesque, urna ac viverra lacinia, erat mauris venenatis purus,
+            mollis egestas urna purus ac ex. Aenean nunc sem, lobortis at elit
+            non, lobortis laoreet nibh. Maecenas at mi ipsum.
+          </p>
+          <p>
+            Quisque tempor, ligula pharetra luctus elementum, arcu nisl suscipit
+            ante, pharetra commodo dui est et enim. Sed eu vestibulum elit.
+            Donec ut libero non.
+          </p>
+          <button>Discover</button>
+        </section>
+      </section>
+
+      <section class="clr"></section>
+      <!---------------card design start-->
+      <h1 id="padding_top_h1">Partners</h1>
+      <p>
+        Praesent at feugiat est, at faucibus ipsum. Aenean condimentum mauris
+        vel malesuada pulvinar. Vestibulum sit amet hendrerit leo, quis vehicula
+        mi.
+      </p>
+      <section class="card fl">
+        <section class="image_section_card">
+          <img src="images/1.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>John Snow</h1>
+        <p>UX designer</p>
+        <p>
+          Sed elementum vehicula nisl, a egestas velit rhoncus nec.Cras vel
+          sapien tincidunt, lacinia risus vel, imperdiet neque.
+        </p>
+        <section class="card_navigatino">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="card new">
+        <section class="image_section_card">
+          <img src="images/2.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>John Snow</h1>
+        <p>UX designer</p>
+        <p>
+          Sed elementum vehicula nisl, a egestas velit rhoncus nec.Cras vel
+          sapien tincidunt, lacinia risus vel, imperdiet neque.
+        </p>
+        <section class="card_navigatino">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="card fr">
+        <section class="image_section_card">
+          <img src="images/3.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>John Snow</h1>
+        <p>UX designer</p>
+        <p>
+          Sed elementum vehicula nisl, a egestas velit rhoncus nec.Cras vel
+          sapien tincidunt, lacinia risus vel, imperdiet neque.
+        </p>
+        <section class="card_navigatino">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <!--------------------------customers start-->
+      <h1>Customers</h1>
+      <p>
+        Praesent at feugiat est, at faucibus ipsum. Aenean condimentum mauris
+        vel malesuada pulvinar. Vestibulum sit amet hendrerit leo, quis vehicula
+        mi.
+      </p>
+      <section class="loogo_div fl">
+        <img src="images/logo-01.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="loogo_div new">
+        <img src="images/logo-02.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="loogo_div fr">
+        <img src="images/logo-03.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="clr"></section>
+      <!---------------------------------Get in touch satrt-->
+      <h1>Get in touch</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <section class="form_section">
+        <section class="leftcontainer fl">
+          <form action="" method="POST">
+            <p>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                id=""
+              />
+            </p>
+            <p>
+              <input type="text" name="subject" placeholder="Subject" id="" />
+            </p>
+            <p>
+              <textarea
+                name="mess"
+                placeholder="Enter Your Message"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </p>
+            <p><input type="submit" id="btnn" value="Send Message" /></p>
+          </form>
+        </section>
+        <section class="leftcontainer fr">
+          <ul>
+            <li>
+              <i class="fas fa-mobile"></i> &nbsp;&nbsp;+ 33 9 07 45 12 65
+            </li>
+            <li>
+              <i class="fas fa-map-marker"></i>&nbsp;&nbsp;42 rue Moulbert 75016
+              Paris
+            </li>
+          </ul>
+        </section>
+        <section class="clr"></section>
+      </section>
+    </section>
+    <!-----------------------footer start-->
+    <footer>
+      <h1>Mountain</h1>
+      <p>Website created with Mashup Template/Unsplash</p>
+      <section class="footer_navigation">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

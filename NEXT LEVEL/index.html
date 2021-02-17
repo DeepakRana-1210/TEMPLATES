@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: 400;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .medium {
+        width: 70%;
+        margin: auto;
+      }
+      .text_container {
+        height: 450px;
+        width: 25%;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 2%;
+        line-height: 40px;
+        font-size: 20px;
+      }
+      .image_container {
+        height: 450px;
+        width: 73%;
+        background-color: lightcoral;
+      }
+      .right_container {
+        height: auto;
+        width: 73%;
+      }
+      .right_container h1 {
+        padding: 6% 0% 1% 0%;
+        font-size: 30px;
+      }
+      .right_container p {
+        margin-top: 40px;
+        line-height: 40px;
+        font-size: 20px;
+      }
+      .mini_column {
+        height: auto;
+        width: 47%;
+        margin-top: 100px;
+      }
+      .mini_column h1 {
+        padding: 6% 0% 0% 0%;
+      }
+      .mini_column ul {
+        list-style-type: none;
+        line-height: 40px;
+        color: royalblue;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      .mini_column p {
+        margin: auto;
+        margin-top: 30px;
+      }
+      .imgcontainer {
+        height: 240px;
+        width: 100%;
+      }
+      .form_contianer {
+        height: 400px;
+        width: 100%;
+        border: 2px solid royalblue;
+        margin-top: 50px;
+      }
+      .logo_container {
+        height: 100%;
+        padding: 14% 8%;
+        width: 30%;
+      }
+      .text_connn {
+        height: 100%;
+        width: 70%;
+        padding: 5%;
+        margin: 0;
+        line-height: 0;
+        padding: 5;
+      }
+      .text_connn h1 {
+        padding: 10% 0% 0% 0%;
+      }
+      .text_connn input {
+        height: 40px;
+        width: auto;
+        padding: 0% 5%;
+        margin-top: 20px;
+      }
+      footer {
+        background-color: rgba(128, 128, 128, 0.295);
+        padding: 5%;
+        margin-top: 50px;
+      }
+      /********************header strat**********************/
+      header {
+        height: 240px;
+        width: 100%;
+        position: relative;
+      }
+      .header_logo {
+        height: 140px;
+        width: 330px;
+        position: absolute;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        top: 50px;
+        font-size: 40px;
+        padding: 1%;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav {
+        height: 100px;
+        width: 70%;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 100px;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 2% 3%;
+        line-height: 100px;
+        font-size: 20px;
+        font-weight: 500;
+        color: royalblue;
+      }
+      nav ul li a:hover {
+        box-shadow: 3px 3px 5px 6px #ccc;
+        color: rgba(34, 0, 253, 0.664);
+      }
+      h1 {
+        color: rgba(34, 0, 255, 0.596);
+      }
+      /********************header end**********************/
+    </style>
+  </head>
+  <body>
+    <section class="medium">
+      <!--------------------header satrt-->
+      <header>
+        <section class="header_logo">
+          <h1>NEXT LEVEL</h1>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--------------------header end-->
+      <section class="text_container fl">
+        <h1>
+          "Hello, this is a clean layout. left side is the text and right side
+          is a parallax image."
+        </h1>
+      </section>
+      <section class="image_container fr">
+        <img src="images/1.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="clr"></section>
+      <!-------------------------right_container start-->
+      <section class="right_container fr">
+        <h1>Nunc tristique velit ut semper</h1>
+        <p>
+          Homepage main photo is provided by Moose Photos from Pexels. Next
+          Level CSS Template is brought to you by Template Mo website. You can
+          feel free to adapt it for your websites. No need to put a footer
+          credit link. Please kindly spread a word about us. Thank you. If you
+          have any question, feel free to contact us on Facebook page.
+        </p>
+
+        <p>
+          Nullam nec dictum dolor. Sed ultricies purus nec suscipit vulputate.
+          Fusce a massa eu orci vulputate varius. Praesent id felis ac erat
+          elementum condimentum. Pellentesque a libero vitae nisi vestibulum
+          tempor vitae vitae nulla. Praesent ut eleifend ligula, nec pretium
+          erat.
+        </p>
+        <section class="mini_column fl">
+          <section class="imgcontainer">
+            <img src="images/2.png" height="100%" width="100%" alt="" />
+          </section>
+          <h1>Quisque at rutrum felis</h1>
+          <p>
+            Photo by CoWomen from Pexels. Morbi sollicitudin nibh eu dignissim
+            mollis. Etiam turpis tortor, ultricies sit amet placerat suscipit,
+            auctor eu diam.
+          </p>
+          <ul>
+            <li>Vestibulum finibus consectetur nulla</li>
+            <li>Eget imperdiet eros interdum sit amet</li>
+            <li>Sed a lacinia lorem, sed luctus enim</li>
+            <li>2 small images has a parallax effect</li>
+          </ul>
+        </section>
+
+        <section class="mini_column fr">
+          <section class="imgcontainer">
+            <img src="images/3.png" height="100%" width="100%" alt="" />
+          </section>
+          <h1>Sed ultricies tortor vitae</h1>
+          <p>
+            Photo by CoWomen from Pexels. Quisque tortor justo, pharetra in eros
+            sed, accumsan dapibus dolor. In luctus sed ante a tristique.
+          </p>
+          <p>
+            You cannot re-distribute our template on your website for download.
+            Ut ornare pulvinar lorem a elementum. Cras sollicitudin ante velit,
+            eget facilisis sem viverra nex. Etiam quis mattis urna.
+          </p>
+        </section>
+        <section class="clr"></section>
+        <section class="form_contianer">
+          <section class="logo_container fl">
+            <img src="images/4.png" height="100%" width="100%" alt="" />
+          </section>
+          <section class="text_connn fr">
+            <h1>Vivamus sollicitudin tellus</h1>
+            <p>
+              Maecenas maximus tellus in dolor auctor tristique. Nam hendrerit
+              posuere laoreet. Aliquam erat volutpat. Nulla eros est, imperdiet
+              vel feugiat non, ullamcorper mattis nulla.
+            </p>
+            <form action="" method="POST">
+              <input
+                type="email"
+                name="email"
+                placeholder="ENTER YOUR EMAIL"
+                id=""
+              />
+              <input type="submit" value="SUBSCRIBE" />
+            </form>
+          </section>
+          <section class="clr"></section>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <!-------------------------right_container end-->
+      <footer>
+        <p>Copyright © 2019 Next Level Company... Designed by Template Mo</p>
+      </footer>
+    </section>
+  </body>
+</html>

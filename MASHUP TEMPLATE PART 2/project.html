@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*********************header satrt************************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 8vh;
+        width: 100%;
+        background-image: url(images/wave-header.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+      }
+      #logo {
+        height: 8vh;
+        width: 300px;
+        position: absolute;
+        left: 10%;
+        line-height: 8vh;
+      }
+      nav {
+        height: 8vh;
+        width: 70%;
+        position: absolute;
+        right: 10%;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        background-color: royalblue;
+        line-height: 8vh;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: royalblue;
+        background-color: whitesmoke;
+      }
+      /***********************************banner satrt********************/
+      .banner {
+        height: 75vh;
+        width: 100%;
+        text-align: center;
+        padding-top: 180px;
+        background-image: url(images/wave-hero-background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .banner h1 {
+        font-size: 60px;
+        color: whitesmoke;
+      }
+      .banner p {
+        font-size: 20px;
+        margin-top: 30px;
+        color: whitesmoke;
+        font-weight: 700;
+      }
+      .banner button {
+        padding: 1% 2%;
+        margin-top: 30px;
+        background-color: whitesmoke;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .banner button:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /************************footer satrt**************************/
+      footer {
+        height: 25vh;
+        width: 100%;
+        padding: 0% 20%;
+        padding-top: 100px;
+        color: whitesmoke;
+        position: relative;
+        background-image: url(images/wave-footer.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      footer h1 {
+        padding: 0% 0% 1% 0%;
+      }
+      footer p {
+        font-size: 20px;
+      }
+      .footer_navigation {
+        height: 8vh;
+        width: 50%;
+        position: absolute;
+        right: 20%;
+        top: 10vh;
+      }
+      .footer_navigation ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      .footer_navigation ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .footer_navigation ul li a {
+        text-decoration: none;
+      }
+      .footer_navigation ul li a i {
+        color: whitesmoke;
+        font-size: 50px;
+      }
+      /****************container satrt***************/
+      .midcontainer {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+      }
+      .midcontainer h1 {
+        font-size: 50px;
+        color: royalblue;
+        padding: 4% 0% 2% 0%;
+      }
+      .midcontainer p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-top: 20px;
+        padding-bottom: 4%;
+      }
+      .bigimage {
+        height: 60vh;
+        padding: 1%;
+        width: 100%;
+      }
+      .bb {
+        height: 30vh;
+        padding: 1%;
+        width: 50%;
+      }
+      .flexproperties {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!-----------------header satrt-->
+    <header>
+      <section id="logo">
+        <h1>
+          <i class="fas fa-building"></i>&nbsp;&nbsp;&nbsp;Mashup Template
+        </h1>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--------------------banner start-->
+    <section class="banner">
+      <h1>Mountain</h1>
+      <p>WELCOME TO MOUNTAIN WEBSITE. AGENCY IN BERLIN.</p>
+      <button>Discover</button>
+    </section>
+    <!-----------contanet here-->
+    <section class="midcontainer">
+      <h1>Moon</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus
+        at sem quis varius. Class aptent taciti sociosqu ad litora torquent per
+        conubia nostra, per inceptos himenaeos. Phasellus iaculis magna sagittis
+        elit sagittis, at hendrerit lorem venenatis. Morbi accumsan iaculis
+        blandit. Cras ultrices hendrerit nisl.
+      </p>
+      <section class="flexproperties">
+        <section class="bigimage">
+          <img src="images/4.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <section class="flexproperties">
+          <section class="bb">
+            <img src="images/5.jpg" height="100%" width="100%" alt="" />
+          </section>
+          <section class="bb">
+            <img src="images/6.jpg" height="100%" width="100%" alt="" />
+          </section>
+        </section>
+      </section>
+      <h1>More</h1>
+      <p>
+        Praesent at feugiat est, at faucibus ipsum. Aenean condimentum mauris
+        vel malesuada pulvinar. Vestibulum sit amet hendrerit leo, quis vehicula
+        mi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <section class="bigimage">
+        <img src="images/7.jpg" height="100%" width="100%" alt="" />
+      </section>
+      <h1>Do you like it ?</h1>
+    </section>
+
+    <!-----------------------footer start-->
+    <footer>
+      <h1>Mountain</h1>
+      <p>Website created with Mashup Template/Unsplash</p>
+      <section class="footer_navigation">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

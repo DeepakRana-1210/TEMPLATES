@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 2%;
+      }
+      .clr {
+        clear: both;
+      }
+      .auto {
+        width: 70%;
+        margin: auto;
+      }
+      .hellll {
+        box-shadow: 3px 3px 5px 6px #ccc;
+        margin-top: 50px;
+        border-radius: 20px;
+      }
+      /**************container start*****************/
+      .box {
+        padding: 5% 0% 5% 0%;
+        width: 32%;
+        text-align: center;
+        position: relative;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .image_div {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 38%;
+      }
+      .box h1 {
+        font-size: 25px;
+        padding-top: 150px;
+      }
+      .box p {
+        padding: 5% 20% 5% 20%;
+        font-size: 18px;
+      }
+      .btn {
+        padding: 4% 2%;
+        width: 40%;
+        background-color: lightcoral;
+        margin: auto;
+        font-size: 18px;
+        color: whitesmoke;
+        border-radius: 10px;
+        font-weight: 600s;
+      }
+      /**************container end*****************/
+      /**************container2 start****************/
+      .box1 {
+        height: 700px;
+        width: 50%;
+        margin-top: 150px;
+      }
+      .imgsection {
+        height: 130px;
+        margin-top: 60px;
+        width: 20%;
+      }
+      .textsection {
+        height: 140px;
+        width: 80%;
+        margin-top: 60px;
+      }
+      .paddingtop {
+        padding-top: 3%;
+        padding-left: 2%;
+      }
+      .textsection h1 {
+        font-size: 22px;
+        padding: 2% 2% 2% 5%;
+      }
+      .textsection p {
+        font-size: 18px;
+        padding: 0% 5% 0% 5%;
+      }
+      /**************container2 end***************/
+      /*************container3 satrt*************/
+      .big_text {
+        font-size: 40px;
+        text-align: center;
+        padding: 8% 0% 2% 0%;
+      }
+      .big_para {
+        font-size: 20px;
+        padding: 0% 20% 10% 20%;
+        text-align: center;
+      }
+      .box2 {
+        padding: 4% 0% 4% 0%;
+        width: 40%;
+        text-align: center;
+        position: relative;
+        background: rgb(129, 67, 22);
+        background: linear-gradient(
+          90deg,
+          rgba(129, 67, 22, 1) 1%,
+          rgb(216, 78, 54) 38%,
+          rgba(213, 70, 55, 1) 62%,
+          rgba(215, 108, 26, 1) 89%,
+          rgb(219, 115, 45) 100%
+        );
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .imgcont {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: -60px;
+        left: -60px;
+      }
+      .startimg {
+        height: 50px;
+        width: 30%;
+        position: absolute;
+        left: 35%;
+      }
+      .box2 h1 {
+        padding: 15% 0% 2% 0%;
+        font-size: 25px;
+      }
+      .box2 p {
+        padding: 2% 15% 0% 15%;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+      .fll {
+        float: left;
+        margin-left: 5%;
+      }
+      .frr {
+        float: right;
+        margin-right: 5%;
+      }
+      .btn:hover {
+        background-color: royalblue;
+      }
+      /*************container3 end*************/
+      /**********************footer start****************/
+      .boxx {
+        padding: 5% 0% 5% 0%;
+        width: 49.5%;
+      }
+      .boxx h1 {
+        font-size: 35px;
+        padding: 8% 0% 2% 5%;
+      }
+      .boxx p {
+        font-size: 18px;
+        padding: 0% 20% 0% 5%;
+        margin-top: 30px;
+      }
+      .boxx input {
+        height: 50px;
+        width: 45%;
+        margin: 20px 0px 0px 10px;
+        padding-left: 2%;
+        font-size: 18px;
+      }
+      .boxx textarea {
+        height: 300px;
+        width: 94%;
+        margin: 20px 0% 3% 2%;
+        font-size: 18px;
+        padding: 2%;
+      }
+      .navigation {
+        padding: 5% 0% 0% 0%;
+      }
+      .navigation ul {
+        list-style-type: none;
+      }
+      .navigation ul li {
+        display: inline;
+        margin-left: 5%;
+      }
+      .navigation ul li i {
+        color: rgb(143, 143, 143);
+        font-size: 45px;
+      }
+      .navigation ul li i:hover {
+        color: royalblue;
+        transform: scale(1.2);
+        transition: 0.6s;
+      }
+      .btn1 {
+        padding: 2%;
+        border-radius: 10px;
+        background-color: lightsalmon;
+        color: whitesmoke;
+        font-weight: 700;
+        margin-left: 16%;
+        font-size: 18px;
+      }
+      .btn1:hover {
+        background-color: royalblue;
+      }
+      .mainpadd {
+        padding-top: 10%;
+      }
+      /**********************footer end****************/
+      /***********************header start**************/
+      .boox {
+        height: 900px;
+        width: 50%;
+        margin: 0% 0% 5% 0%;
+        position: relative;
+      }
+      .headerh1 {
+        padding: 20% 20% 0% 20%;
+        color: rgba(0, 0, 0, 0.74);
+        line-height: 1.4;
+        font-size: 50px;
+      }
+      .headerp {
+        padding: 5% 20% 5% 20%;
+        font-size: 22px;
+        line-height: 1.8;
+        color: rgba(0, 0, 0, 0.74);
+      }
+      .btnn {
+        padding: 2%;
+        margin-left: 20%;
+        border-radius: 20px;
+        background-color: lightcoral;
+        font-weight: 700;
+        color: whitesmoke;
+      }
+      .btnn:hover {
+        background-color: royalblue;
+        border: 2px solid white;
+      }
+      nav {
+        height: 60px;
+        width: 150%;
+        z-index: 1;
+        position: absolute;
+        right: -200px;
+        top: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        color: whitesmoke;
+        line-height: 3.7;
+        padding: 1% 2%;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 2px solid royalblue;
+        background-color: whitesmoke;
+        color: royalblue;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        border: 2px solid white;
+        color: whitesmoke;
+      }
+      .logo {
+        height: auto;
+        width: auto;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        padding: 1%;
+        font-size: 30px;
+        font-weight: 900;
+        border: 2px solid royalblue;
+        border-radius: 20px;
+        color: royalblue;
+      }
+      /***********************header end**************/
+      /***********************media query***********************/
+      @media (max-width: 1400px) {
+        nav {
+          right: -500px;
+        }
+      }
+      @media (max-width: 1060px) {
+        nav {
+          width: 180%;
+        }
+        nav ul {
+          text-align: center;
+        }
+      }
+      @media (max-width: 950px) {
+        nav {
+          background-color: chartreuse;
+        }
+        .hh1 {
+          width: 100%;
+          float: none;
+          height: auto;
+        }
+        .hh2 {
+          display: none;
+        }
+        .hh11 {
+          float: none;
+          width: 100%;
+          margin: 0%;
+          margin-top: 100px;
+        }
+        .box {
+          float: none;
+          width: 100%;
+          margin: 0%;
+          margin-top: 50px;
+        }
+        nav {
+          display: none;
+        }
+      }
+      /***********************media end***********************/
+    </style>
+  </head>
+  <body>
+    <!--------------------------------header start-->
+    <section class="boox hh1 fl">
+      <section class="logo">LAVA</section>
+      <nav>
+        <ul>
+          <li><a href="#"> HOME</a></li>
+          <li><a href="#"> ABOUT</a></li>
+          <li><a href="#"> TESTIMONIALS</a></li>
+          <li><a href="#"> DROP DOWN</a></li>
+          <li><a href="#"> CONTACT US</a></li>
+        </ul>
+      </nav>
+      <h1 class="headerh1">Simple App that we CREATE</h1>
+      <p class="headerp">
+        Lava HTML landing page template is provided by TemplateMo. You can
+        modify and use it for your commercial websites for free of charge. This
+        template is last updated on 29 Oct 2019.
+      </p>
+      <button class="btnn">KNOW US BETTER</button>
+    </section>
+    <section class="boox hh2 fr">
+      <img src="Images/hello2.png" height="100%" width="100%" alt="" />
+    </section>
+    <section class="clr"></section>
+    <!--------------------------------header end-->
+    <section class="auto">
+      <!-------------------container1 start-->
+      <section class="box fl">
+        <section class="image_div">
+          <img src="Images/1.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Trend Analysis</h1>
+        <p>
+          Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec
+          consectetur diam.
+        </p>
+        <section class="btn">READ MORE</section>
+      </section>
+      <section class="box new">
+        <section class="image_div">
+          <img src="Images/1.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Trend Analysis</h1>
+        <p>
+          Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec
+          consectetur diam.
+        </p>
+        <section class="btn">READ MORE</section>
+      </section>
+      <section class="box fr">
+        <section class="image_div">
+          <img src="Images/1.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Trend Analysis</h1>
+        <p>
+          Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec
+          consectetur diam.
+        </p>
+        <section class="btn">READ MORE</section>
+        <section class="clr"></section>
+      </section>
+      <!-------------------container1 end-->
+      <!-------------------container2 start-->
+      <section class="box1 hh2 fl">
+        <img src="Images/4.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="box1 hh1 paddingtop fr">
+        <section class="imgsection fl">
+          <img src="Images/5.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="textsection fr">
+          <h1>Vestibulum pulvinar rhoncus</h1>
+          <p>
+            Please do not redistribute this template ZIP file for a download
+            purpose. You may contact us for additional licensing of our template
+            or to get a PSD file.
+          </p>
+        </section>
+        <section class="clr"></section>
+
+        <section class="imgsection fl">
+          <img src="Images/6.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="textsection fr">
+          <h1>Vestibulum pulvinar rhoncus</h1>
+          <p>
+            Please do not redistribute this template ZIP file for a download
+            purpose. You may contact us for additional licensing of our template
+            or to get a PSD file.
+          </p>
+        </section>
+        <section class="clr"></section>
+        <section class="imgsection fl">
+          <img src="IMages/7.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="textsection fr">
+          <h1>Vestibulum pulvinar rhoncus</h1>
+          <p>
+            Please do not redistribute this template ZIP file for a download
+            purpose. You may contact us for additional licensing of our template
+            or to get a PSD file.
+          </p>
+        </section>
+        <section class="clr"></section>
+      </section>
+      <section class="clr"></section>
+      <!-------------------container2 end-->
+      <!-------------container3 start-->
+      <h1 class="big_text">What They Think About Us</h1>
+      <p class="big_para">
+        Suspendisse vitae laoreet mauris. Fusce a nisi dapibus, euismod purus
+        non, convallis odio. Donec vitae magna ornare, pellentesque ex vitae,
+        aliquet urna.
+      </p>
+      <section class="box2 hh11 fll">
+        <section class="imgcont">
+          <img src="Images/8.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="startimg">
+          <img src="Images/0.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Martino Tino</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sint
+          autem consequatur sapiente. Quasi assumenda nihil veniam harum
+          blanditiis quo illum, hic sapiente minus tempore tenetur nisi culpa?
+          Consequuntur, distinctio.
+        </p>
+      </section>
+      <section class="box2 hh11 frr">
+        <section class="imgcont">
+          <img src="Images/8.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="startimg">
+          <img src="Images/0.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Martino Tino</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero sint
+          autem consequatur sapiente. Quasi assumenda nihil veniam harum
+          blanditiis quo illum, hic sapiente minus tempore tenetur nisi culpa?
+          Consequuntur, distinctio.
+        </p>
+      </section>
+      <section class="clr"></section>
+      <!-------------container3 end-->
+      <!------------footer start-->
+      <section class="boxx hh11 hellll fl">
+        <form action="" method="POST">
+          <p>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Your Name"
+              id=""
+            />
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              name="email"
+              id=""
+            />
+          </p>
+
+          <p>
+            <textarea
+              name="msg"
+              placeholder="Enter Your Message"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </p>
+        </form>
+        <button class="btn1">SEND MESSAGE NOW</button>
+      </section>
+      <section class="boxx hh11 mainpadd fr">
+        <h1>More About Lava</h1>
+        <p>
+          Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo
+          auctor. Duis at finibus odio. Vivamus ut pharetra arcu, in porta
+          metus. Suspendisse blandit pulvinar ligula ut elementum.
+        </p>
+        <p>
+          If you need this contact form to send email to your inbox, you may
+          follow our contact page for more detail.
+        </p>
+        <section class="navigation">
+          <ul>
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-twitter-square"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+            <li><i class="fab fa-swift"></i></li>
+            <li><i class="fas fa-volleyball-ball"></i></li>
+          </ul>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <!------------footer end-->
+    </section>
+  </body>
+</html>

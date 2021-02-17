@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: 400;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .medium {
+        width: 70%;
+        margin: auto;
+      }
+      /********************header strat**********************/
+      header {
+        height: 240px;
+        width: 100%;
+        position: relative;
+      }
+      .header_logo {
+        height: 140px;
+        width: 330px;
+        position: absolute;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        top: 50px;
+        font-size: 40px;
+        padding: 1%;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+
+      nav {
+        height: 100px;
+        width: 70%;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 100px;
+      }
+      nav ul li {
+        display: inline;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 2% 3%;
+        line-height: 100px;
+        font-size: 20px;
+        font-weight: 500;
+        color: royalblue;
+      }
+      nav ul li a:hover {
+        box-shadow: 3px 3px 5px 6px #ccc;
+        color: rgba(34, 0, 253, 0.664);
+      }
+      h1 {
+        color: rgba(34, 0, 255, 0.596);
+      }
+      /********************header end**********************/
+      .text_container {
+        height: 450px;
+        width: 25%;
+        background-color: lightblue;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding: 2%;
+        line-height: 40px;
+        font-size: 20px;
+      }
+      .image_container {
+        height: 450px;
+        width: 73%;
+        background-color: lightcoral;
+      }
+      .left_caontineer {
+        height: auto;
+        width: 25%;
+      }
+      .right_container {
+        height: auto;
+        width: 73%;
+      }
+      .right_container h1 {
+        padding: 3% 0%;
+        font-size: 40px;
+      }
+      .right_container p {
+        font-size: 20px;
+        padding: 2% 0%;
+      }
+      /*******************************three_box_card_design_start****************/
+      .three_box_card_design {
+        width: 32.66%;
+        padding: 2%;
+        text-align: center;
+        line-height: 1.8;
+      }
+      .three_box_card_design .Image_container {
+        height: 350px;
+        width: 100%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        margin: auto;
+      }
+      .three_box_card_design h1 {
+        padding: 8% 0% 2% 0%;
+      }
+      .three_box_card_design button {
+        padding: 3%;
+        background-color: lightblue;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+      /*******************************three_box_card_design_end****************/
+      .logosdiv ul {
+        list-style-type: none;
+      }
+      .logosdiv ul li {
+        display: inline;
+        font-size: 40px;
+        margin-left: 10px;
+      }
+
+      .form_contianer {
+        height: 400px;
+        width: 100%;
+        border: 2px solid royalblue;
+        margin-top: 50px;
+      }
+      .logo_container {
+        height: 100%;
+        padding: 14% 8%;
+        width: 30%;
+      }
+      .text_connn {
+        height: 100%;
+        width: 70%;
+        padding: 5%;
+        margin: 0;
+        line-height: 0;
+        padding: 5;
+      }
+      .text_connn h1 {
+        padding: 10% 0% 0% 0%;
+      }
+      .text_connn input {
+        height: 40px;
+        width: auto;
+        padding: 0% 5%;
+        margin-top: 20px;
+      }
+      footer {
+        background-color: rgba(128, 128, 128, 0.295);
+        padding: 5%;
+        margin-top: 50px;
+      }
+
+      /***********************************/
+      .hellobox {
+        height: 350px;
+        width: 73%;
+        border: 2px solid royalblue;
+      }
+      .minilogoimg {
+        height: 350px;
+        width: 20%;
+        padding-top: 15%;
+      }
+      .mainitextgg {
+        height: 350px;
+        width: 80%;
+        padding-top: 12%;
+        padding-left: 2%;
+      }
+      .mainitextgg h1 {
+        padding: 3% 0% 2% 0%;
+        font-size: 30px;
+      }
+      .mainitextgg p {
+        padding: 0% 10% 2% 0%;
+        font-size: 20px;
+      }
+      .mainitextgg input {
+        height: 40px;
+        width: auto;
+        padding: 0% 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="medium">
+      <!--------------------header satrt-->
+      <header>
+        <section class="header_logo">
+          <h1>NEXT LEVEL</h1>
+        </section>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--------------------header end-->
+      <section class="text_container fl">
+        <h1>
+          "This is a gradient CSS background #A0c0c0 to #669999 and right side
+          is a pink lady parallx image."
+        </h1>
+      </section>
+      <section class="image_container fr">
+        <img src="images/5.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="clr"></section>
+      <section class="left_caontineer fl"></section>
+      <section class="right_container fr">
+        <h1>About Us</h1>
+        <p>
+          Praesent id felis ac erat elementum condimentum. Pellentesque a libero
+          vitae nisi vestibulum tempor vitae vitae nulla. Praesent ut eleifend
+          ligula, nec pretium erat. Suspendisse nec magna id massa sollicitudin
+          aliquam eget ut turpis.
+        </p>
+        <p>
+          Above pink girl photo is provided by Moose Photos from Pexels. This is
+          a tab content area. There are 3 tabs at the left side. Curabitur
+          porttitor metus nisl. Nullam nec dictum dolor. Sed ultricies purus nec
+          suscipit vulputate. Fusce a massa eu orci vulputate varius. Quisque
+          quis ullamcorper sapien. Integer eu luctus nulla, vel viverra odio.
+        </p>
+        <!---------------------------three_box_card_design_start-->
+        <section class="three_box_card_design fl">
+          <section class="Image_container">
+            <img src="images/a1.jpg" height="100%" width="100%" alt="" />
+          </section>
+          <h1>Catherine Theta</h1>
+          <p>Project Manager</p>
+          <section class="logosdiv">
+            <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter-square"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+          </section>
+          <p>
+            Mauris efficitur risus mi, et varius dolor sodales facilisis. Fusce
+            sed mi tristique.
+          </p>
+        </section>
+        <section class="three_box_card_design new">
+          <section class="Image_container">
+            <img src="images/a2.jpg" height="100%" width="100%" alt="" />
+          </section>
+          <h1>Catherine Theta</h1>
+          <p>Project Manager</p>
+          <section class="logosdiv">
+            <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter-square"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+          </section>
+          <p>
+            Mauris efficitur risus mi, et varius dolor sodales facilisis. Fusce
+            sed mi tristique.
+          </p>
+        </section>
+        <section class="three_box_card_design fr">
+          <section class="Image_container">
+            <img src="images/a4.jpg" height="100%" width="100%" alt="" />
+          </section>
+          <h1>Catherine Theta</h1>
+          <p>Project Manager</p>
+          <section class="logosdiv">
+            <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter-square"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+          </section>
+          <p>
+            Mauris efficitur risus mi, et varius dolor sodales facilisis. Fusce
+            sed mi tristique.
+          </p>
+        </section>
+        <section class="clr"></section>
+        <!---------------------------three_box_card_design_end-->
+      </section>
+      <section class="clr"></section>
+      <section class="hellobox fr">
+        <section class="minilogoimg fl">
+          <img src="images/4.png" alt="" />
+        </section>
+        <section class="mainitextgg fr">
+          <h1>Vivamus sollicitudin tellus</h1>
+          <p>
+            Maecenas maximus tellus in dolor auctor tristique. Nam hendrerit
+            posuere laoreet. Aliquam erat volutpat. Nulla eros est, imperdiet
+            vel feugiat non, ullamcorper mattis nulla.
+          </p>
+          <form action="" method="POST">
+            <input
+              type="email"
+              name="eamil"
+              id="emami"
+              placeholder="ENTER YOUR EMAIL"
+            />&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="SUBSCRIBE" />
+          </form>
+        </section>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <footer>
+      <p>Copyright © 2019 Next Level Company... Designed by Template Mo</p>
+    </footer>
+  </body>
+</html>
