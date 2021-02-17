@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".bg1").slideToggle(1000);
+          $(".bg2").hide(1000);
+          $(".bg3").hide(1000);
+          $(".bg4").hide(1000);
+        });
+        $("#btn2").click(function () {
+          $(".bg1").hide(1000);
+          $(".bg2").slideToggle(1000);
+          $(".bg3").hide(1000);
+          $(".bg4").hide(1000);
+        });
+        $("#btn3").click(function () {
+          $(".bg1").hide(1000);
+          $(".bg2").hide(1000);
+          $(".bg3").slideToggle(1000);
+          $(".bg4").hide(1000);
+        });
+        $("#btn4").click(function () {
+          $(".bg1").hide(1000);
+          $(".bg2").hide(1000);
+          $(".bg3").hide(1000);
+          $(".bg4").slideToggle(1000);
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: sans-serif;
+        word-spacing: 1px;
+      }
+      header {
+        height: 640px;
+        width: 100%;
+        background: linear-gradient(to bottom, #303846 0%, #5f6673 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      .logo {
+        height: 60px;
+        width: 200px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        text-align: center;
+        line-height: 1.8;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px black;
+      }
+
+      nav {
+        height: 60px;
+        width: 50%;
+        position: absolute;
+        right: 60px;
+        top: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        background-color: red;
+        padding: 1.5%;
+        font-weight: 700;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px black;
+        line-height: 3.8;
+      }
+      .data_container {
+        width: 30%;
+        overflow: hidden;
+        position: absolute;
+        top: 150px;
+        left: 35%;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 1px 1px 1px black;
+      }
+      .data_container h1 {
+        font-size: 50px;
+      }
+      .data_container p {
+        text-align: justify;
+        font-size: 25px;
+        padding: 3%;
+      }
+      #banner_image {
+        margin-top: 70px;
+      }
+
+      /*******************************section Main_content start*************************************/
+
+      #main_contant {
+        overflow: hidden;
+        color: rgba(10, 10, 10, 0.85);
+        width: 50%;
+        margin: auto;
+      }
+      .image_container {
+        height: 150px;
+        width: 25%;
+        padding-bottom: 1%;
+      }
+      .text_container {
+        height: 150px;
+        width: 75%;
+        padding-bottom: 1%;
+      }
+      .text_container h1 {
+        padding: 4% 0% 0% 6%;
+      }
+      .text_container p {
+        padding: 3% 4% 3% 6%;
+      }
+      .fl {
+        float: left;
+        margin-top: 70px;
+      }
+      .fr {
+        float: right;
+        margin-top: 70px;
+      }
+      .clr {
+        clear: both;
+      }
+      #main_h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 80px;
+      }
+      #mainn_heading {
+        font-size: 30px;
+        padding: 4% 25% 0% 25%;
+      }
+      .image_slider {
+        width: 100%;
+        margin-top: 70px;
+        text-align: center;
+      }
+      #image_change {
+        margin-top: 50px;
+      }
+      #h3_heading {
+        margin-top: 20px;
+      }
+      #para_heading {
+        margin-top: 15px;
+        padding: 0% 8% 2% 8%;
+      }
+      #mm {
+        text-align: center;
+      }
+      /*******************************section Main_content End*************************************/
+
+      /*************************************footer start********************************************************/
+      * {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        height: auto;
+        width: 100%;
+        line-height: 2.5;
+      }
+      .footer ul {
+        padding-left: 10%;
+      }
+      .hellocontant1 {
+        width: 50%;
+        margin: auto;
+        border: 1px solid red;
+        margin-top: 20px;
+        padding: 1%;
+      }
+
+      .hellocontant1 a {
+        padding: 1% 2%;
+        background-color: pink;
+      }
+      #hh {
+        text-align: right;
+        margin-top: -80px;
+      }
+      .thisli {
+        width: 50%;
+        margin: auto;
+        font-size: 20px;
+        padding-bottom: 15px;
+      }
+      .thisli ul li a:hover {
+        color: rgb(234, 0, 255);
+      }
+      .thisli ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .bg1 {
+        display: none;
+      }
+      .bg2 {
+        display: none;
+      }
+      .bg3 {
+        display: none;
+      }
+      .bg4 {
+        display: none;
+      }
+      .thhediv {
+        padding: 1%;
+        background-color: yellowgreen;
+        display: inline;
+      }
+      .thediv11 {
+        height: 50px;
+        border: 1px solid red;
+        padding-left: 2%;
+      }
+      .ennd {
+        padding-top: 20px;
+        text-align: center;
+        line-height: 2;
+      }
+      #paddingtext {
+        margin-top: 8px;
+        padding: 0% 30% 0% 30%;
+      }
+
+      /*************************************footer end********************************************************/
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><h1>Business</h1></div>
+      <nav>
+        <ul>
+          <li><a href="Login-Registration.html">Login</a></li>
+          <li><a href="Login-Registration.html">Creat Account</a></li>
+        </ul>
+      </nav>
+      <div class="data_container">
+        <h1>Business Manager</h1>
+        <p>
+          Manage ad accounts, Pages and the people who work on them – all in one
+          place. It's free.
+        </p>
+        <img
+          src="Images/1.png"
+          id="banner_image"
+          width="80%"
+          height="250px"
+          alt=""
+        />
+      </div>
+    </header>
+    <!-------------------------------main_content start------------------------------------------->
+    <section id="main_contant">
+      <h1 id="main_h1">Why choose Business Manager?</h1>
+      <br />
+      <div class="image_container fl">
+        <img src="Images/2.png" height="100%" width="100%" alt="" />
+      </div>
+      <div class="text_container fr">
+        <h1>You need more than one ad account.</h1>
+        <p>
+          Create separate ad accounts for every client or business you serve,
+          pay for ads with different payment methods and organise by objective
+          for reporting.
+        </p>
+      </div>
+      <div class="clr"></div>
+
+      <div class="image_container fr">
+        <img src="Images/3.png" height="100%" width="80%" alt="" />
+      </div>
+      <div class="text_container fl">
+        <h1>You need to request access to Pages or ad accounts.</h1>
+        <p>
+          If you have clients, you can request access to their Pages and ad
+          accounts to become an analyst or advertiser.
+        </p>
+      </div>
+      <div class="clr"></div>
+
+      <div class="image_container fl">
+        <br />
+        <img src="Images/4.png" height="100%" width="90%" alt="" />
+      </div>
+      <div class="text_container fr">
+        <h1>
+          You need to assign permissions to a lot of people working together.
+        </h1>
+        <p>
+          You can allow specific, role-based access to ad accounts, Pages and
+          other assets that your business manages, as well as easily see who's
+          working on what.
+        </p>
+      </div>
+      <div class="clr"></div>
+
+      <div class="image_container fr">
+        <img src="Images/5.png" height="100%" width="95%" alt="" />
+      </div>
+      <div class="text_container fl">
+        <h1>You need business-level insights and reporting.</h1>
+        <p>
+          See the performance of your ads across different ad accounts and get
+          reports of the assets and people your business is responsible for.
+        </p>
+      </div>
+      <div class="clr"></div>
+
+      <div class="image_slider">
+        <h1 id="mainn_heading">What do you get with Business Manager?</h1>
+        <img
+          id="image_change"
+          src="Images/11.png"
+          height="650px"
+          width="80%"
+          alt=""
+        />
+        <h3 id="h3_heading">Stay up to date with your business</h3>
+        <p id="para_heading">
+          When you sign in to Business Manager, see alerts and insights about
+          the Pages and ad accounts that matter most to your business.
+        </p>
+      </div>
+    </section>
+    <!-------------------------------main_content end------------------------------------------->
+
+    <!---------------------------------------footer satrt---------------------------------------->
+    <div class="footer">
+      <h1 id="mm">Common questions</h1>
+      <div class="thisli">
+        <ul>
+          <li id="btn1">Using Business Manager</li>
+          <li id="btn2">Privacy</li>
+          <li id="btn3">Adding business assets</li>
+          <li id="btn4">Understanding roles</li>
+        </ul>
+      </div>
+
+      <hr />
+      <div class="hellocontant1 bg1">
+        <a href="#">Create a Business Manager</a><br />
+        <a href="#">
+          Why should I use Business Manager if I already have an ad account on
+          Facebook?</a
+        >
+        <p>
+          If you're an advertiser on Facebook who shares access to multiple
+          Pages and ad accounts with other people, we recommend that you
+          transition to Business Manager.
+        </p>
+        <ul>
+          <li>
+            Business Manager is a more secure way to manage your Pages and ad
+            accounts.
+          </li>
+          <li>
+            You can see who's working on what and what they have access to view
+            and work on.
+          </li>
+          <li>
+            You can also keep your business separate from your personal Facebook
+            profile.
+          </li>
+        </ul>
+        <p>Was this information helpful?</p>
+        <form action="" method="POST">
+          <input type="radio" name="msg" id="this" />Yes
+          <input type="radio" name="msg" id="this" />No
+        </form>
+        <p id="hh">
+          <a href="#"
+            >View full article ·<br />
+            Share article
+          </a>
+        </p>
+      </div>
+
+      <div class="hellocontant1 bg2">
+        <a href="#"
+          >Using your personal Facebook username and password to sign in to
+          Business Manager</a
+        >
+        <div class="thediv11">
+          <i class="fas fa-info-circle"></i> &nbsp;&nbsp; You must have a
+          personal Facebook username and password to sign in to Business
+          Manager.
+        </div>
+        <p>
+          Business Manager accounts are created with your personal Facebook
+          profile to verify your identity. This is similar to logging in with
+          Facebook to access other apps or services. It's more secure than using
+          just an email address and password to log in.
+        </p>
+        <p>Your colleagues can see:</p>
+        <ul>
+          <li>
+            Your name and the work email address you provide when you log in to
+            Business Manager for the first time. They can also see the list of
+            Pages and ad accounts that you have access to in Business Manager.
+          </li>
+          <li>
+            Information on your personal profile that you've made available in
+            your privacy settings for your personal Facebook, which is different
+            from <a href="#">Business Manager Settings.</a>
+          </li>
+        </ul>
+        <p>
+          Don't have a Facebook Profile? Create a Facebook profile by clicking
+          Sign Up.
+        </p>
+        <div class="thhediv">Go to Business Manager</div>
+        <p>Was this information helpful?</p>
+        <form action="" method="POST">
+          <input type="radio" name="msg" id="this" />Yes
+          <input type="radio" name="msg" id="this" />No
+        </form>
+        <p id="hh">
+          <a href="#"
+            >View full article ·<br />
+            Share article
+          </a>
+        </p>
+      </div>
+
+      <div class="hellocontant1 bg3">
+        <a href="#"
+          >Can people still access my Pages once I've transferred them to
+          Business Manager?</a
+        >
+        <p>
+          Yes, people who had access to your Page before you transferred it to
+          Business Manager will still have access to it. Business Manager is an
+          easier way to manage permissions for everyone who works on your Pages,
+          ad accounts and assets.
+        </p>
+        <p>Learn more about <a href="#">roles and permissions.</a></p>
+        <div class="thhediv">Go to Business Manager</div>
+        <p>Was this information helpful?</p>
+        <form action="" method="POST">
+          <input type="radio" name="msg" id="this" />Yes
+          <input type="radio" name="msg" id="this" />No
+        </form>
+        <p id="hh">
+          <a href="#"
+            >View full article ·<br />
+            Share article
+          </a>
+        </p>
+      </div>
+
+      <div class="hellocontant1 bg4">
+        <p>
+          Business Manager uses a 2-layer permission system that makes sure that
+          each person has the access they need. The first level is where you add
+          people to your Business Manager. You can assign them either admin or
+          employee access. Then, use task-based permissions to grant access to
+          your assets.
+        </p>
+        <p>
+          With the task-based permissions system, you can see the specific
+          activities you allow each person to perform. Task-based permissions
+          help you safeguard your Facebook information. We recommend that you
+          share the least amount of access that still allows people to do their
+          work.
+        </p>
+        <h3>Add people to your Business Manager</h3>
+        <p>
+          When you add people to your Business Manager, assign them admin or
+          employee access.
+        </p>
+        <ul>
+          <li>
+            Employee access: We recommend that you add people as employees. They
+            can only work on assigned accounts and tools.
+          </li>
+          <li>
+            Admin access: Admins have full control over your business. They can
+            edit settings, people, accounts and tools.
+          </li>
+        </ul>
+        <p>You can also use advanced options to assign finance roles.</p>
+        <ul>
+          <li>
+            Finance analyst: They see financial details such as transactions,
+            invoices, account spend and payment methods.
+          </li>
+          <li>
+            Finance editor: They can edit business credit card information and
+            financial details such as transactions, invoices, account spend and
+            payment methods.
+          </li>
+        </ul>
+        <h3>Grant people access to assets</h3>
+        <p>
+          After you've added people to your Business Manager, you can grant them
+          permission to access your business's assets in Business settings. For
+          example, ad accounts, Pages, pixels or catalogues.
+        </p>
+        <p>
+          For each person and asset, you can grant access to specific tasks. For
+          example, you can add someone to your Business Manager as an employee,
+          then grant them permission to create ads and view Page performance,
+          but not publish to the Page. Tasks for each asset are divided into two
+          categories:
+        </p>
+        <ul>
+          <li>
+            Standard access: Toggle on each task you'd like the person to
+            perform.
+          </li>
+          <li>
+            Admin access: In this section, you only have one option. Toggle on
+            admin access to allow the person to manage the asset and perform all
+            available tasks.
+          </li>
+        </ul>
+        <p>
+          Note: Only Pages assigned to a Business Manager use task-based
+          permissions. Pages not associated with a Business Manager use
+          role-based permissions.
+        </p>
+        <p>Was this information helpful?</p>
+        <form action="" method="POST">
+          <input type="radio" name="msg" id="this" />Yes
+          <input type="radio" name="msg" id="this" />No
+        </form>
+        <p id="hh">
+          <a href="#"
+            >View full article ·<br />
+            Share article
+          </a>
+        </p>
+      </div>
+    </div>
+    <!---------------------------------------footer end------------------------------------------>
+    <!-----------------end section start------------------------------------------------------------->
+    <div class="ennd">
+      <p>
+        For more information about how to set up and use Business Manager, visit
+        our Advertiser Help Centre.
+      </p>
+      <p id="paddingtext">
+        To learn how to get the most out of Facebook advertising tools and build
+        your best campaigns, visit Blueprint for a series of in-depth online
+        courses.
+      </p>
+    </div>
+
+    <!-----------------end section end------------------------------------------------------------->
+  </body>
+</html>

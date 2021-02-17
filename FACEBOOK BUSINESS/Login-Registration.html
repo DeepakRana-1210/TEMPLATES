@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#loginn").click(function () {
+          $(".login").show();
+          $(".registration").hide();
+        });
+        $("#registrationn").click(function () {
+          $(".login").hide();
+          $(".registration").show();
+        });
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        height: 80px;
+        width: 100%;
+        background-color: whitesmoke;
+      }
+      .logo {
+        height: 80px;
+        text-align: center;
+        line-height: 2.4;
+        width: 200px;
+        position: absolute;
+        left: 10px;
+      }
+      .nav {
+        height: 80px;
+        width: 70%;
+        position: absolute;
+        right: 50px;
+      }
+      .nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        color: white;
+        background-color: lightskyblue;
+        font-size: 20px;
+        padding: 1% 2%;
+        line-height: 3.4;
+      }
+      .nav ul li a:hover {
+        text-decoration: underline;
+      }
+      .ff {
+        color: blue;
+        font-size: 35px;
+      }
+
+      .login {
+        height: 420px;
+        width: 40%;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        margin-top: 10px;
+        background-color: rgba(240, 128, 128, 0.8);
+      }
+      .registration {
+        height: 420px;
+        width: 40%;
+        border-radius: 5px;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+        display: none;
+        background-color: rgba(224, 255, 255, 0.2);
+      }
+      .maindiv {
+        height: 50px;
+        text-align: left;
+        line-height: 2.5;
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+        border: 1px solid blue;
+        padding-left: 10%;
+      }
+      #llogin {
+        margin-top: 15px;
+        font-size: 22px;
+      }
+      .yellodiv {
+        padding: 1%;
+        width: 60%;
+        margin: auto;
+        background-color: lightyellow;
+      }
+      input {
+        height: 45px;
+        padding-left: 3%;
+        width: 70%;
+        margin-top: 20px;
+      }
+      .login a {
+        text-decoration: none;
+        color: rgb(73, 67, 67);
+      }
+      .btn {
+        width: 30%;
+        text-align: center;
+      }
+      .hellodiv {
+        padding: 4% 0% 4% 0%;
+        background-color: lightslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h1><i class="fab ff fa-facebook-square"></i>&nbsp; Business</h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a id="loginn" href="#">Log In </a></li>
+          <li><a id="registrationn" href="#">Creat Account </a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="hellodiv">
+      <div class="login">
+        <br />
+        <div class="maindiv">
+          <p><i class="fas fa-info"></i>&nbsp; You must log in to continue.</p>
+        </div>
+        <p id="llogin">Log in to Facebook</p>
+        <br />
+        <div class="yellodiv">
+          <p>You must log in to continue.</p>
+        </div>
+
+        <form action="" method="POST">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email or Phone Nummber"
+              id=""
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              name="pass"
+              placeholder="Enter Your Password"
+              id=""
+            />
+          </p>
+          <p><input type="submit" class="btn" value="Log In" /></p>
+        </form>
+        <br />
+        <a href="#">Forgotten account? · </a
+        ><a href="#">Sign up for Facebook</a>
+      </div>
+
+      <div class="registration">
+        <br />
+        <div class="maindiv">
+          <p><i class="fas fa-info"></i>&nbsp; You must log in to continue.</p>
+        </div>
+        <p id="llogin">Log in to Facebook</p>
+        <br />
+        <div class="yellodiv">
+          <p>You must log in to continue.</p>
+        </div>
+
+        <form action="" method="POST">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email or Phone Nummber"
+              id=""
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              name="pass"
+              placeholder="Enter Your Password"
+              id=""
+            />
+          </p>
+          <p><input type="submit" class="btn" value="Registration" /></p>
+        </form>
+        <br />
+        <a href="#">Forgotten account? · </a
+        ><a href="#">Sign up for Facebook</a>
+      </div>
+    </div>
+  </body>
+</html>
