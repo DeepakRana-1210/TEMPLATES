@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /******************************navigation start*************************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 20vh;
+        width: 100%;
+        background-color: antiquewhite;
+      }
+      #logo {
+        height: 14vh;
+        width: 400px;
+        position: absolute;
+        left: 5%;
+        top: 3vh;
+        text-align: center;
+        padding-top: 2%;
+        position: relative;
+      }
+      #logo i {
+        position: absolute;
+        left: 10px;
+        font-size: 100px;
+        top: 15px;
+      }
+      #logo h1 {
+        font-size: 30px;
+      }
+      nav {
+        height: 10vh;
+        width: 70%;
+        position: absolute;
+        right: 5%;
+        top: 5vh;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1.5% 2%;
+        background-color: rgba(172, 255, 47, 0.486);
+        line-height: 10vh;
+        font-size: 25px;
+        color: black;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /******************************navigation end*************************/
+
+      /*****************************footer start****************************/
+      footer {
+        height: 50vh;
+        width: 100%;
+        padding: 2% 10%;
+        text-align: center;
+      }
+      .img_container {
+        height: 50vh;
+        width: 30%;
+        background-color: chartreuse;
+      }
+      .text_container {
+        height: 50vh;
+        width: 69%;
+        background-color: lightcoral;
+        padding: 5%;
+      }
+      .text_container h1 {
+        text-align: left;
+        font-size: 40px;
+      }
+      .text_container p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 40px;
+      }
+      .text_container input {
+        height: 50px;
+        padding: 1%;
+      }
+      #emailid {
+        width: 50%;
+        margin-top: 40px;
+      }
+      #btn {
+        padding: 1% 2%;
+      }
+      #footer_text {
+        padding-top: 8%;
+        font-size: 20px;
+        padding-bottom: 5%;
+      }
+      /*****************************footer end****************************/
+
+      /************************banner start**********************/
+      .mid {
+        height: 40vh;
+        width: 70%;
+        margin: auto;
+        background-image: url(images/3.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        margin-top: 50px;
+      }
+      .textdiv {
+        height: 18vh;
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+        background-color: rgba(0, 0, 0, 0.39);
+        color: whitesmoke;
+        text-align: center;
+      }
+      .textdiv h1 {
+        font-size: 40px;
+        margin-top: 25px;
+      }
+      .textdiv p {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      /************************banner end**********************/
+
+      /****************************card design start*****************/
+      .maincenter {
+        width: 70%;
+        margin: auto;
+      }
+      .boxes {
+        padding: 3% 1%;
+        width: 32%;
+        border: 2px solid whitesmoke;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .boxes h1 {
+        font-size: 25px;
+        margin-top: 30px;
+      }
+      .boxes p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-top: 30px;
+        padding: 0% 8%;
+      }
+      .neww {
+        margin-left: 2%;
+        float: left;
+      }
+      .image_container {
+        height: 250px;
+        width: 70%;
+        margin: auto;
+        border: 2px solid black;
+      }
+      /****************************card design end*****************/
+    </style>
+  </head>
+  <body>
+    <!------------------------nevigation start-->
+    <header>
+      <section id="logo">
+        <i class="fas fa-pen-square"></i>
+        <h1>PARALLO</h1>
+        <p>new app landing page</p>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------nevigation end-->
+    <!------------------banner start-->
+    <section class="mid">
+      <section class="textdiv">
+        <h1>TESTIMONIALS</h1>
+        <p>Parallax movement background page ice mountain for testimonials.</p>
+      </section>
+    </section>
+    <!------------------banner end-->
+
+    <!-----------------card design start-->
+    <section class="maincenter">
+      <section class="boxes fl">
+        <section class="image_container">
+          <img src="images/person-1.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Lorem ipsum dolor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quos
+          doloremque distinctio mollitia aut quidem molestiae quam enim
+        </p>
+      </section>
+      <section class="boxes neww">
+        <section class="image_container">
+          <img src="images/person-2.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Lorem ipsum dolor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quos
+          doloremque distinctio mollitia aut quidem molestiae quam enim
+        </p>
+      </section>
+      <section class="boxes fr">
+        <section class="image_container">
+          <img src="images/person-3.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Lorem ipsum dolor</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quos
+          doloremque distinctio mollitia aut quidem molestiae quam enim
+        </p>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!-----------------card design end-->
+    <!----------------------------footer start-->
+    <footer>
+      <section class="img_container fl">
+        <img src="images/1.jpg" height="100%" width="100%" alt="" />
+      </section>
+      <section class="text_container fr">
+        <h1>Images by Unsplash</h1>
+        <p>
+          You may browse Too CSS website for the collection of CSS templates for
+          your projects. Aliquam erat volutpat. Nulla eros est, imperdiet vel
+          feugiat non, ullamcorper mattis nulla.
+        </p>
+        <form action="" method="post">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id="emailid"
+            />
+            <input type="submit" value="Get Updates" id="btn" />
+          </p>
+        </form>
+      </section>
+      <section class="clr"></section>
+      <p id="footer_text">
+        Copyright © 2020 App Landing Page. Designed by TemplateMo
+      </p>
+    </footer>
+    <!----------------------------footer end-->
+  </body>
+</html>

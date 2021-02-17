@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#videobtn").click(function () {
+          $(".videoplayer").show();
+        });
+        $("#closebtn").click(function () {
+          $(".videoplayer").hide();
+        });
+        $("#navigationbtn").click(function () {
+          $("#nabi").slideToggle(500);
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .medium {
+        width: 80%;
+        margin: auto;
+      }
+
+      /************************nav start************************/
+      .medium nav {
+        height: 60px;
+        width: 100%;
+        margin-top: 25px;
+      }
+      .medium nav ul {
+        list-style-type: none;
+        text-align: center;
+      }
+      .medium nav ul li {
+        display: inline;
+        margin-left: 10px;
+      }
+      .medium nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        border: 1px solid rgb(97, 97, 97);
+        font-weight: 600;
+        line-height: 3.7;
+      }
+      /************************nav staendrt************************/
+
+      /********************box start****************/
+      .box {
+        height: 300px;
+        width: 33.33%;
+        background-color: lightcoral;
+        overflow: hidden;
+        position: relative;
+      }
+      .box:hover img {
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+      .hoverdiv {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(46, 45, 46, 0.568);
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        display: none;
+        color: white;
+      }
+      .hoverdiv h1 {
+        padding: 10% 5% 5% 5%;
+        font-size: 45px;
+      }
+      .hoverdiv p {
+        padding: 2% 10% 0% 10%;
+        font-size: 20px;
+      }
+      .box:hover .hoverdiv {
+        display: block;
+      }
+      /********************box end****************/
+      /*********************footer start************/
+      footer {
+        height: 50vh;
+        width: 100%;
+        background-color: black;
+        margin-top: 100px;
+        position: relative;
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 10vh;
+        line-height: 30px;
+        font-size: 20px;
+      }
+      footer nav {
+        width: 50%;
+        position: absolute;
+        bottom: 20px;
+        font-size: 16px;
+      }
+      footer nav ul li a:hover {
+        color: red;
+      }
+      footer input {
+        height: 50px;
+        padding: 0% 4%;
+        margin-top: 50px;
+      }
+      #submit:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /*********************footer end************/
+
+      /******************get in touch start*******************/
+      .minimedian {
+        height: 50vh;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+      }
+      .minimedian h1 {
+        padding: 5%;
+        font-size: 40px;
+      }
+      .getin {
+        height: 100%;
+        width: 50%;
+        padding: 2%;
+      }
+      .getin p {
+        padding: 4% 0% 0% 0%;
+        font-size: 20px;
+      }
+      .getin input {
+        height: 50px;
+        width: 48%;
+        margin-top: 10px;
+      }
+      .getin textarea {
+        width: 96.7%;
+        margin-top: 10px;
+      }
+      .getin ul {
+        list-style-type: none;
+        text-align: left;
+      }
+      .getin ul li {
+        margin-top: 30px;
+        font-size: 22px;
+      }
+      .getin ul li i {
+        font-size: 40px;
+      }
+      /******************get in touch end*******************/
+
+      /****************our work start***********************/
+      .work {
+        height: 30vh;
+        width: 100%;
+        background-color: whitesmoke;
+        text-align: center;
+        margin-top: 25px;
+      }
+      .work h1 {
+        padding: 5% 0% 0% 0%;
+        font-size: 40px;
+      }
+      .work p {
+        padding: 2% 20%;
+        font-size: 20px;
+      }
+      /****************our work end***********************/
+
+      /*****************video start***********************/
+      .videodiv {
+        height: 40vh;
+        width: 100%;
+        background-color: whitesmoke;
+        text-align: center;
+        margin-top: 25px;
+        background-image: url(images/video.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: whitesmoke;
+      }
+      .videodiv h1 {
+        padding: 5% 0% 0% 0%;
+        font-size: 50px;
+      }
+      .videodiv p {
+        padding: 2% 20%;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .videolo {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+      }
+      .videolo i {
+        font-size: 50px;
+      }
+      .videolo:hover {
+        color: red;
+      }
+      .videoplayer {
+        height: 50vh;
+        width: 60%;
+        margin: auto;
+        margin-top: -400px;
+        padding: 3%;
+        display: none;
+        position: relative;
+      }
+      #closebtn {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        color: black;
+        font-size: 40px;
+      }
+      /*****************video end***********************/
+
+      /******************boxdd start*********************/
+      .immcont {
+        height: 40vh;
+        width: 50%;
+        margin-top: 50px;
+        padding-left: 10%;
+      }
+      .texttt {
+        height: 40vh;
+        width: 50%;
+        margin-top: 50px;
+        padding: 1% 10%;
+      }
+      .texttt h1 {
+        font-size: 40px;
+        padding-bottom: 2%;
+      }
+      .texttt p {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .texttt button {
+        padding: 2%;
+        margin-top: 20px;
+      }
+      .texttt button:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /******************boxdd end*********************/
+
+      /*******************bannerbox start***************/
+      .bannerbox {
+        height: 60vh;
+        width: 24.25%;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .bannerbox i {
+        font-size: 200px;
+      }
+      .hoverrdiv {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        display: none;
+        padding: 35% 10% 0% 10%;
+      }
+      .hoverrdiv h1 {
+        font-size: 35px;
+        padding: 5% 0%;
+      }
+      .hoverrdiv p {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      .bannerbox:hover i {
+        display: none;
+      }
+      .bannerbox:hover .hoverrdiv {
+        display: block;
+      }
+      /*******************bannerbox end**************/
+
+      /*************************real banner start****************/
+      .baner {
+        height: 68vh;
+        width: 100%;
+        background-image: url(images/banner.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: whitesmoke;
+        padding: 8% 60% 0% 5%;
+      }
+      .baner h1 {
+        font-size: 50px;
+        line-height: 1.3;
+      }
+      .baner p {
+        font-size: 25px;
+        line-height: 1.7;
+        margin-top: 30px;
+      }
+      .baner button {
+        padding: 2%;
+        border-radius: 20px;
+        font-weight: 700;
+        background-color: royalblue;
+        color: whitesmoke;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+      /*************************real banner end****************/
+
+      /****************************header start**********************/
+      header {
+        height: 8vh;
+        width: 100%;
+        background-color: black;
+        position: relative;
+      }
+      .logo {
+        height: 100%;
+        width: 150px;
+        position: absolute;
+        left: 10%;
+      }
+      header nav {
+        height: 92vh;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        padding-top: 200px;
+        justify-content: center;
+        align-items: center;
+        top: 8vh;
+        text-align: center;
+        display: none;
+      }
+      header nav ul {
+        list-style-type: none;
+      }
+      header nav ul li a {
+        font-size: 25px;
+        line-height: 2.5;
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      header nav ul li a:hover {
+        color: tomato;
+        text-decoration: underline;
+      }
+      #navigationbtn {
+        height: 8vh;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        font-size: 50px;
+        color: whitesmoke;
+      }
+      /****************************header end**********************/
+    </style>
+  </head>
+  <body>
+    <!-----------------------------header start-->
+    <header>
+      <section class="logo">
+        <img src="images/logo.png" height="100%" width="100%" alt="" />
+      </section>
+      <nav id="nabi">
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> Gain The Knowledge</a></li>
+          <li><a href="#"> Improve your business</a></li>
+          <li><a href="#"> Video</a></li>
+          <li><a href="#"> Our Work</a></li>
+          <li><a href="#"> Get In Touch</a></li>
+        </ul>
+      </nav>
+      <section id="navigationbtn"><i class="fas fa-hamburger"></i></section>
+    </header>
+    <!-----------------------------header end-->
+
+    <!------------------------real banner start-->
+    <section class="baner">
+      <h1>Gain The Knowledge you Need to Succeed</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+        sapiente cumque est, quaerat sequi aperiam quae repellendus.
+      </p>
+      <button>Click Here</button>
+      <button>Read More</button>
+    </section>
+    <!------------------------real banner end-->
+
+    <section class="medium">
+      <!---------------------mainbox start-->
+      <section class="work">
+        <h1>Gain The Knowledge you Need to Succeed</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+          sapiente cumque est, quaerat sequi aperiam quae repellendus.
+          Aspernatur corrupti eos quam beatae, voluptatibus nemo distinctio ad
+          suscipit, et officia velit.
+        </p>
+      </section>
+
+      <!-----------------bannerbox start-->
+      <section class="bannerbox fl">
+        <i class="fa fa-cogs"></i>
+        <section class="hoverrdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            sapiente cumque est, quaerat sequi aperiam quae repellendus.
+            Aspernatur corrupti eos quam beatae, voluptatibus nemo distinctio ad
+            suscipit, et officia velit.
+          </p>
+        </section>
+      </section>
+      <section class="bannerbox new">
+        <i class="fa fa-chart-pie"></i>
+        <section class="hoverrdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            sapiente cumque est, quaerat sequi aperiam quae repellendus.
+            Aspernatur corrupti eos quam beatae, voluptatibus nemo distinctio ad
+            suscipit, et officia velit.
+          </p>
+        </section>
+      </section>
+      <section class="bannerbox new">
+        <i class="fa fa-tachometer-alt"></i>
+        <section class="hoverrdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            sapiente cumque est, quaerat sequi aperiam quae repellendus.
+            Aspernatur corrupti eos quam beatae, voluptatibus nemo distinctio ad
+            suscipit, et officia velit.
+          </p>
+        </section>
+      </section>
+      <section class="bannerbox fr">
+        <i class="fa fa-cubes"></i>
+        <section class="hoverrdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            sapiente cumque est, quaerat sequi aperiam quae repellendus.
+            Aspernatur corrupti eos quam beatae, voluptatibus nemo distinctio ad
+            suscipit, et officia velit.
+          </p>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <!-----------------bannerbox end-->
+
+      <!---------------------mainbox end-->
+
+      <!---------------boxdd start-------------->
+      <section class="immcont fl">
+        <img
+          src="images/improve-business.jpg"
+          height="100%"
+          width="100%"
+          alt=""
+        />
+      </section>
+      <section class="texttt fr">
+        <h1>Improve your business today!</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+          assumenda explicabo delectus totam ex ratione dolorem, recusandae
+          temporibus illum cupiditate, ab labore architecto. Deserunt officiis,
+          iusto culpa aperiam, obcaecati corporis? Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Repudiandae assumenda explicabo delectus
+          totam ex ratione dolorem, recusandae temporibus illum cupiditate, ab
+          labore architecto.
+        </p>
+        <button>Read More</button>
+      </section>
+      <section class="clr"></section>
+      <!----------------boxdd end------------->
+      <!--------------video start-->
+      <section class="videodiv">
+        <h1>Video</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+          sapiente cumque est, quaerat sequi aperiam quae repellendus.
+        </p>
+        <div class="videolo"><i id="videobtn" class="fab fa-youtube"></i></div>
+        <section class="videoplayer">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/55GnWyJf1Gw"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <section id="closebtn"><i class="fas fa-times"></i></section>
+        </section>
+      </section>
+      <!--------------video end-->
+
+      <!------------------our worl start-->
+      <section class="medium">
+        <section class="work">
+          <h1>Our Work</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            sapiente cumque est, quaerat sequi aperiam quae repellendus.
+            Aspernatur corrupti eos quam beatae, voluptatibus nemo distinctio ad
+            suscipit, et officia velit.
+          </p>
+        </section>
+        <!------------------our worl end-->
+
+        <!---------------nav start-->
+        <nav>
+          <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Web Design</a></li>
+          </ul>
+        </nav>
+      </section>
+      <!---------------nav end-->
+
+      <!------------------boxes  start-->
+      <section class="box fl">
+        <img src="images/category-1.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="box fl">
+        <img src="images/category-2.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="box fl">
+        <img src="images/category-3.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="clr"></section>
+
+      <section class="box fl">
+        <img src="images/category-4.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="box fl">
+        <img src="images/category-5.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="box fl">
+        <img src="images/category-6.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="clr"></section>
+
+      <section class="box fl">
+        <img src="images/category-7.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="box fl">
+        <img src="images/category-8.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="box fl">
+        <img src="images/category-9.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+            adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit consectetur adipisicing elit.
+          </p>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <!------------------boxes  end-->
+
+      <!--------------------get in touch start-->
+      <section class="minimedian">
+        <h1>Get In Touch</h1>
+        <section class="getin fl">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <form action="" method="POST">
+            <p>
+              <input
+                type="text"
+                name="fname"
+                placeholder="Enter Your Full Name"
+                id=""
+              />
+              <input
+                type="email"
+                name="eamil"
+                placeholder="Enter Your Email"
+                id=""
+              />
+            </p>
+            <p>
+              <input type="text" name="contact" placeholder="Contact" id="" />
+              <input type="text" name="company" placeholder="Company" id="" />
+            </p>
+            <p>
+              <textarea
+                name="message"
+                placeholder="Enter Your Message"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </p>
+          </form>
+        </section>
+        <section class="getin fr">
+          <h1>Contact Details</h1>
+
+          <ul>
+            <li>
+              <i class="fas fa-address-book"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+              Address <br />#001 bridge Road, RST City, USA
+            </li>
+            <li>
+              <i class="fas fa-phone-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;Mobile
+              <br />+1234567890
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;Email
+              <br />abc@abc.com
+            </li>
+          </ul>
+        </section>
+        <section class="clr"></section>
+      </section>
+      <!--------------------get in touch end-->
+      <section class="clr"></section>
+      <!------------------footer start-->
+      <footer>
+        <p>
+          Sign up for our free newsletter We share the latest on building great
+          companies and careers from around the Web.
+        </p>
+        <p>© Small Business, Inc.</p>
+        <p>Designed by Position2</p>
+        <form action="" method="POST">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id=""
+            />
+            <input type="submit" id="submit" value="Get Updates" />
+          </p>
+        </form>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+      <!------------------footer end-->
+    </section>
+  </body>
+</html>

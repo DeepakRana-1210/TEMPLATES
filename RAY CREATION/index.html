@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 80px;
+        width: 100%;
+        background-color: whitesmoke;
+        position: relative;
+        font-weight: 400;
+        font-family: sans-serif;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      .logo {
+        height: 80px;
+        width: 300px;
+        position: absolute;
+        left: 200px;
+        text-align: center;
+        line-height: 80px;
+      }
+      nav {
+        height: 80px;
+        width: 80%;
+        position: absolute;
+        right: 0px;
+        font-weight: 600;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 120px;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        line-height: 5;
+        color: rgba(0, 0, 0, 0.671);
+      }
+      #last_nav {
+        border: 2px solid orange;
+        color: orange;
+        border-radius: 50px;
+      }
+      /************************section start****************************/
+      section {
+        height: 100vh;
+        width: 100%;
+        background-image: url(Images/1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 150%;
+      }
+      .hellodiv {
+        height: 100%;
+        width: auto;
+        padding-left: 200px;
+        background-color: rgba(0, 0, 0, 0.247);
+      }
+      #bigtext {
+        font-size: 70px;
+        color: white;
+        line-height: 2;
+      }
+      #bigpara {
+        color: white;
+        line-height: 2;
+        font-size: 22px;
+      }
+      #btn1 {
+        padding: 1%;
+        margin-top: 20px;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.61);
+        color: whitesmoke;
+        border-radius: 10px;
+      }
+      #btn1:hover {
+        background-color: whitesmoke;
+        border: 1px solid black;
+        color: rgba(0, 0, 0, 0.671);
+      }
+      .web {
+        width: 80%;
+        margin: auto;
+        padding: 1%;
+        text-align: center;
+      }
+      .minidiv {
+        height: 50px;
+        width: 32.66%;
+        border: 2px solid rgba(12, 12, 12, 0.158);
+        border-radius: 20px;
+        margin-top: 20px;
+      }
+      .minidiv:hover {
+        background-color: rgba(41, 24, 24, 0.178);
+        color: black;
+      }
+      #bigtext2 {
+        font-size: 45px;
+        padding: 5% 0% 2% 0%;
+      }
+      .minidiv p {
+        padding: 14px 0px 0px 30px;
+        text-align: left;
+      }
+      .fl {
+        float: left;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .para {
+        line-height: 1.8;
+        padding: 1%;
+      }
+      /***********************container start**********************************/
+      .container {
+        height: 540px;
+        width: 100%;
+        margin-top: 100px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .hello1 {
+        height: 540px;
+        width: 50%;
+        background-color: #06102f;
+        color: whitesmoke;
+        overflow: hidden;
+      }
+      .fr {
+        float: right;
+      }
+      #para11 {
+        text-align: justify;
+        padding: 3% 20% 2% 0%;
+        line-height: 1.5;
+      }
+      #imgg {
+        margin-left: 90px;
+      }
+      .main {
+        position: relative;
+      }
+      .hoverdiv {
+        height: 450px;
+        width: 105%;
+        background-color: #06102f;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        display: none;
+      }
+      .hello1:hover .hoverdiv {
+        display: block;
+      }
+      .leftdiv {
+        width: 50%;
+        padding-top: 40px;
+        padding-left: 5%;
+      }
+      .leftdiv ul li {
+        margin-top: 10px;
+      }
+      #btn3 {
+        padding: 2%;
+        margin-top: 50px;
+        background: #06102f;
+        border: 2px solid whitesmoke;
+        margin-left: -30px;
+        color: whitesmoke;
+        border-radius: 10px;
+      }
+      #btn3:hover {
+        background-color: whitesmoke;
+        color: black;
+        font-weight: 700;
+      }
+      .mainntext {
+        padding-left: 10%;
+        overflow: hidden;
+      }
+      .bg11 {
+        background-color: white;
+        color: black;
+      }
+
+      /********************************mainsection start**************************************/
+      .container11 {
+        height: 140px;
+        width: 100%;
+        background-color: lightblue;
+        margin-top: 80px;
+        text-align: center;
+        line-height: 140px;
+      }
+      .container222 {
+        padding-top: 3%;
+        width: 80%;
+        margin: auto;
+      }
+      .divtext {
+        height: auto;
+        width: 32.66%;
+        text-align: justify;
+        text-align: center;
+        border: 1px solid rgba(184, 172, 172, 0.534);
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 3%;
+        margin-top: 20px;
+      }
+      .divtext h1 {
+        font-size: 35px;
+        color: royalblue;
+      }
+      .divtext h1:hover {
+        color: rgb(23, 67, 197);
+      }
+      .divtext p {
+        margin-top: 10px;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.884);
+        font-weight: 600;
+      }
+      #btn44 {
+        padding: 1%;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 20px;
+        background: #06102f;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        border-radius: 10px;
+      }
+      #btn44:hover {
+        background-color: whitesmoke;
+        color: black;
+        font-weight: 700;
+        border: 2px solid #06102f;
+      }
+
+      /******************************************this is for fun bro**********************************************/
+    </style>
+  </head>
+  <body>
+    <!-----------------------------header start-------------------------->
+    <header>
+      <div class="logo"><h1>Ray Creations</h1></div>
+      <nav>
+        <ul>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#"> Our Plugins</a></li>
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> Blog</a></li>
+          <li><a id="last_nav" href="#"> Request Quote</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------------section start---------------------------------->
+    <section>
+      <div class="hellodiv">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <h1 id="bigtext">Web Design & Development</h1>
+        <p id="bigpara">
+          We have been creating beautiful, functional websites for our global
+          clients for over 10+ years now.
+        </p>
+        <button id="btn1">Let's Get Started</button>
+      </div>
+    </section>
+    <!-----------------------------web start----------------------------------------->
+    <div class="web">
+      <h1 id="bigtext2">Web & Mobile Solutions</h1>
+      <p class="para">
+        Ray Creations has over 10+ years of experience working with global
+        clients like yourself. We have been catering to clients from the USA,
+        UK, Australia & parts of Europe providing you with affordable quality
+        website design & development services.
+      </p>
+      <p class="para">
+        We craft beautiful high-end websites that are functional and built
+        keeping your business objectives in mind. Once your site is ready, we
+        also help to maintain it for you. You concentrate on running your
+        business and we take care of every aspect of the website for you,
+        including but not limited to, website maintenance, hosting, updates &
+        digital marketing.
+      </p>
+      <div class="minidiv fl"><p>Corporate Websites</p></div>
+      <div class="minidiv new"><p>Website Redesign</p></div>
+      <div class="minidiv new"><p>Accelerated Mobile Pages (AMP)</p></div>
+      <div class="clr"></div>
+      <div class="minidiv fl"><p>Mobile First Design Approach</p></div>
+      <div class="minidiv new"><p>Revamp Existing Website</p></div>
+      <div class="minidiv new"><p>Landing Page Design</p></div>
+      <div class="clr"></div>
+      <br /><br /><br /><br /><br /><br /><br />
+      <button id="btn1">Request To Quote</button>
+    </div>
+    <!-----------------------container1---------------------------->
+    <div class="container">
+      <div class="hello1 fl">
+        <br /><br /><br />
+        <img id="imgg" src="Images/11.png" height="80%" width="70%" alt="" />
+      </div>
+      <div class="hello1 main fr">
+        <br /><br />
+        <h1 id="bigtext2">Web Development</h1>
+        <p id="para11">
+          Have an idea you want to bring to life?<br />
+          <br />
+          Our team of professional developers is ready to weave your idea into
+          the perfect web application for you. Our competence in programming
+          languages like PHP, MySQL, JQuery enables us to develop world-class
+          web applications with more accuracy and in shorter time frames.We take
+          advantage of the latest and emerging technologies to build robust, yet
+          scalable apps, plugins & software. Web Development W
+        </p>
+        <button id="btn1">Read More</button>
+        <div class="hoverdiv">
+          <h1 id="bigtext2">Web Development</h1>
+          <div class="leftdiv fl">
+            <ul>
+              <li>Web application development</li>
+              <li>ECommerce Development</li>
+              <li>Progressive Web Apps</li>
+              <li>deployment</li>
+              <li>Angular Development</li>
+              <li>WordPress / Laravel / Magento / Drupal / React</li>
+            </ul>
+            <button id="btn3">Read More</button>
+          </div>
+          <div class="leftdiv fr">
+            <ul>
+              <li>Customized mobile apps</li>
+              <li>Technology Consultation</li>
+              <li>Testing</li>
+              <li>Node JS Development</li>
+              <li>Codeignitor</li>
+            </ul>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+
+    <!-----------------------container2---------------------------->
+    <div class="container">
+      <div class="hello1 bg11 fr">
+        <br /><br /><br />
+        <img id="imgg" src="Images/2.png" height="80%" width="70%" alt="" />
+      </div>
+      <div class="hello1 bg11 main fl mainntext">
+        <br /><br />
+        <h1 id="bigtext2">Web Development</h1>
+        <p id="para11">
+          Have an idea you want to bring to life?<br />
+          <br />
+          Our team of professional developers is ready to weave your idea into
+          the perfect web application for you. Our competence in programming
+          languages like PHP, MySQL, JQuery enables us to develop world-class
+          web applications with more accuracy and in shorter time frames.We take
+          advantage of the latest and emerging technologies to build robust, yet
+          scalable apps, plugins & software. Web Development W
+        </p>
+        <button id="btn1">Read More</button>
+        <div class="hoverdiv bg11">
+          <h1 id="bigtext2">Web Development</h1>
+          <div class="leftdiv fl">
+            <ul>
+              <li>Web application development</li>
+              <li>ECommerce Development</li>
+              <li>Progressive Web Apps</li>
+              <li>deployment</li>
+              <li>Angular Development</li>
+              <li>WordPress / Laravel / Magento / Drupal / React</li>
+            </ul>
+            <button id="btn3">Read More</button>
+          </div>
+          <div class="leftdiv fr">
+            <ul>
+              <li>Customized mobile apps</li>
+              <li>Technology Consultation</li>
+              <li>Testing</li>
+              <li>Node JS Development</li>
+              <li>Codeignitor</li>
+            </ul>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="clr"></div>
+
+      <!-----------------------container3---------------------------->
+    </div>
+    <div class="container">
+      <div class="hello1 fl">
+        <br /><br /><br />
+        <img id="imgg" src="Images/3.png" height="80%" width="70%" alt="" />
+      </div>
+      <div class="hello1 main fr">
+        <br /><br />
+        <h1 id="bigtext2">Web Development</h1>
+        <p id="para11">
+          Have an idea you want to bring to life?<br />
+          <br />
+          Our team of professional developers is ready to weave your idea into
+          the perfect web application for you. Our competence in programming
+          languages like PHP, MySQL, JQuery enables us to develop world-class
+          web applications with more accuracy and in shorter time frames.We take
+          advantage of the latest and emerging technologies to build robust, yet
+          scalable apps, plugins & software. Web Development W
+        </p>
+        <button id="btn1">Read More</button>
+        <div class="hoverdiv">
+          <h1 id="bigtext2">Web Development</h1>
+          <div class="leftdiv fl">
+            <ul>
+              <li>Web application development</li>
+              <li>ECommerce Development</li>
+              <li>Progressive Web Apps</li>
+              <li>deployment</li>
+              <li>Angular Development</li>
+              <li>WordPress / Laravel / Magento / Drupal / React</li>
+            </ul>
+            <button id="btn3">Read More</button>
+          </div>
+          <div class="leftdiv fr">
+            <ul>
+              <li>Customized mobile apps</li>
+              <li>Technology Consultation</li>
+              <li>Testing</li>
+              <li>Node JS Development</li>
+              <li>Codeignitor</li>
+            </ul>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+
+    <!-----------------------container4---------------------------->
+    <div class="container">
+      <div class="hello1 bg11 fr">
+        <br /><br /><br />
+        <img id="imgg" src="Images/4.jpg" height="80%" width="70%" alt="" />
+      </div>
+      <div class="hello1 bg11 main fl mainntext">
+        <br /><br />
+        <h1 id="bigtext2">Web Development</h1>
+        <p id="para11">
+          Have an idea you want to bring to life?<br />
+          <br />
+          Our team of professional developers is ready to weave your idea into
+          the perfect web application for you. Our competence in programming
+          languages like PHP, MySQL, JQuery enables us to develop world-class
+          web applications with more accuracy and in shorter time frames.We take
+          advantage of the latest and emerging technologies to build robust, yet
+          scalable apps, plugins & software. Web Development W
+        </p>
+        <button id="btn1">Read More</button>
+        <div class="hoverdiv bg11">
+          <h1 id="bigtext2">Web Development</h1>
+          <div class="leftdiv fl">
+            <ul>
+              <li>Web application development</li>
+              <li>ECommerce Development</li>
+              <li>Progressive Web Apps</li>
+              <li>deployment</li>
+              <li>Angular Development</li>
+              <li>WordPress / Laravel / Magento / Drupal / React</li>
+            </ul>
+            <button id="btn3">Read More</button>
+          </div>
+          <div class="leftdiv fr">
+            <ul>
+              <li>Customized mobile apps</li>
+              <li>Technology Consultation</li>
+              <li>Testing</li>
+              <li>Node JS Development</li>
+              <li>Codeignitor</li>
+            </ul>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+
+    <!-----------------------container5---------------------------->
+    <div class="container">
+      <div class="hello1 fl">
+        <br /><br /><br />
+        <img id="imgg" src="Images/5.png" height="80%" width="70%" alt="" />
+      </div>
+      <div class="hello1 main fr">
+        <br /><br />
+        <h1 id="bigtext2">Web Development</h1>
+        <p id="para11">
+          Have an idea you want to bring to life?<br />
+          <br />
+          Our team of professional developers is ready to weave your idea into
+          the perfect web application for you. Our competence in programming
+          languages like PHP, MySQL, JQuery enables us to develop world-class
+          web applications with more accuracy and in shorter time frames.We take
+          advantage of the latest and emerging technologies to build robust, yet
+          scalable apps, plugins & software. Web Development W
+        </p>
+        <button id="btn1">Read More</button>
+        <div class="hoverdiv">
+          <h1 id="bigtext2">Web Development</h1>
+          <div class="leftdiv fl">
+            <ul>
+              <li>Web application development</li>
+              <li>ECommerce Development</li>
+              <li>Progressive Web Apps</li>
+              <li>deployment</li>
+              <li>Angular Development</li>
+              <li>WordPress / Laravel / Magento / Drupal / React</li>
+            </ul>
+            <button id="btn3">Read More</button>
+          </div>
+          <div class="leftdiv fr">
+            <ul>
+              <li>Customized mobile apps</li>
+              <li>Technology Consultation</li>
+              <li>Testing</li>
+              <li>Node JS Development</li>
+              <li>Codeignitor</li>
+            </ul>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <!---------------------------------mainsection start------------------------------------------>
+    <div class="container11">
+      <h1>
+        Need Help With Your Website?
+        <button id="btn44">Discuss Your Project</button>
+      </h1>
+    </div>
+    <div class="container222">
+      <h1>Focused On Growing Your Brand Online</h1>
+      <div class="divtext fl">
+        <h1>Branding</h1>
+        <br /><br /><br />
+        <p>
+          Creative brands leave a lasting impression on their customer's mind.
+          Your business has a personality which should reflect in your branding.
+        </p>
+        <p>
+          It is not just good copywriting & logo. The collective use of color,
+          form, shape, logo, graphics, print and other things that your audience
+          attaches with your brand. That is branding and it can have a profound
+          impact on user perception.
+        </p>
+      </div>
+      <div class="divtext new">
+        <h1>We Love Working With Global Clients.</h1>
+        <br />
+        <p>
+          Ray Creations works with companies & individuals from around the world
+          with majority of the clients from Australia, United Kingdom (UK),
+          United States (US) and other parts of Europe.
+        </p>
+        <p>
+          As a truly global company, we love to work with diverse clients with
+          diverse needs. We get immense satisfaction in creating sites that add
+          value to your business.
+        </p>
+      </div>
+      <div class="divtext fr">
+        <h1>Trust Us To Get The Work Done</h1>
+        <br />
+        <p>
+          Please do go through our portfolio, and check out the beautiful candid
+          sites we have created for our clients from all over the world. It will
+          give you the confidence and assurance that you are working with a
+          professional company with proficiency in internet services.
+        </p>
+        <p>
+          And that you can also expect similar amazing results. Be assured of a
+          beautiful, well coded, well designed, 100% Responsive site at an
+          affordable price.
+        </p>
+      </div>
+    </div>
+    <!-----------------------------------------this is for fun bro------------------------------------------------->
+  </body>
+</html>

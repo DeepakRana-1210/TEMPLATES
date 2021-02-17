@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#the1").click(function () {
+          $("#tab1").show();
+          $("#tab2").hide();
+          $("#tab3").hide();
+        });
+        $("#the2").click(function () {
+          $("#tab2").show();
+          $("#tab1").hide();
+          $("#tab3").hide();
+        });
+        $("#the3").click(function () {
+          $("#tab3").show();
+          $("#tab1").hide();
+          $("#tab2").hide();
+        });
+      });
+    </script>
+    <style>
+      /******************************navigation start*************************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 20vh;
+        width: 100%;
+        background-color: antiquewhite;
+      }
+      #logo {
+        height: 14vh;
+        width: 400px;
+        position: absolute;
+        left: 5%;
+        top: 3vh;
+        text-align: center;
+        padding-top: 2%;
+        position: relative;
+      }
+      #logo i {
+        position: absolute;
+        left: 10px;
+        font-size: 100px;
+        top: 15px;
+      }
+      #logo h1 {
+        font-size: 30px;
+      }
+      nav {
+        height: 10vh;
+        width: 70%;
+        position: absolute;
+        right: 5%;
+        top: 5vh;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1.5% 2%;
+        background-color: rgba(172, 255, 47, 0.486);
+        line-height: 10vh;
+        font-size: 25px;
+        color: black;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /******************************navigation end*************************/
+
+      /*****************************footer start****************************/
+      footer {
+        height: 50vh;
+        width: 100%;
+        padding: 2% 10%;
+        text-align: center;
+      }
+      .img_container {
+        height: 50vh;
+        width: 30%;
+        background-color: chartreuse;
+      }
+      .text_container {
+        height: 50vh;
+        width: 69%;
+        background-color: lightcoral;
+        padding: 5%;
+      }
+      .text_container h1 {
+        text-align: left;
+        font-size: 40px;
+      }
+      .text_container p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 40px;
+      }
+      .text_container input {
+        height: 50px;
+        padding: 1%;
+      }
+      #emailid {
+        width: 50%;
+        margin-top: 40px;
+      }
+      #btn {
+        padding: 1% 2%;
+      }
+      #footer_text {
+        padding-top: 8%;
+        font-size: 20px;
+        padding-bottom: 5%;
+      }
+      /*****************************footer end****************************/
+
+      /*************************************banner start**************************/
+      .bannertop {
+        height: 80vh;
+        width: 70%;
+        margin: auto;
+        padding-top: 25vh;
+        position: relative;
+        background-image: url(images/3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 50px;
+      }
+      .textdiiv {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.664);
+        height: 30vh;
+        padding-top: 10vh;
+        position: absolute;
+        color: whitesmoke;
+        width: 100%;
+      }
+      .textdiiv h1 {
+        font-size: 40px;
+      }
+      .textdiiv p {
+        font-size: 20px;
+        padding: 0% 5%;
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      /*************************************banner end**************************/
+
+      /*******************anotherdiv satrt*********************/
+      .containertext {
+        height: 50vh;
+        width: 70%;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.377);
+        padding-top: 10vh;
+        margin-top: 50px;
+      }
+      .containertext p {
+        font-size: 20px;
+        margin-top: 40px;
+        padding: 0% 5%;
+      }
+      /*******************anotherdiv end*********************/
+
+      /*******************lastdiv start**********************/
+      .imgimg {
+        height: 50vh;
+        width: 35%;
+        background-color: aqua;
+        padding: 2% 2%;
+        overflow: hidden;
+        margin-top: 50px;
+      }
+      .imgimg ul {
+        list-style-type: none;
+      }
+      .imgimg ul li {
+        line-height: 3;
+        font-size: 35px;
+        font-weight: 700;
+        border: 5px solid white;
+        margin-top: 20px;
+      }
+      .texttext {
+        height: 50vh;
+        width: 64%;
+        background-color: yellowgreen;
+        margin-top: 50px;
+        position: relative;
+      }
+      .texttext h1 {
+        font-size: 40px;
+        padding: 5% 0% 0% 2%;
+      }
+      .texttext p {
+        margin-top: 40px;
+        font-size: 20px;
+        padding: 0% 5% 2% 2%;
+        line-height: 1.6;
+      }
+      .mid {
+        width: 70%;
+        margin: auto;
+      }
+      #tab1 {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+      }
+      #tab2 {
+        height: 100%;
+        position: absolute;
+        background-color: tomato;
+        width: 100%;
+        display: none;
+        top: 0px;
+      }
+      #tab3 {
+        height: 100%;
+        width: 100%;
+        background-color: royalblue;
+        color: whitesmoke;
+        position: absolute;
+        display: none;
+        top: 0px;
+      }
+      /*******************lastdiv end**********************/
+    </style>
+  </head>
+  <body>
+    <!------------------------nevigation start-->
+    <header>
+      <section id="logo">
+        <i class="fas fa-pen-square"></i>
+        <h1>PARALLO</h1>
+        <p>new app landing page</p>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------nevigation end-->
+
+    <!-------------------banner start-->
+    <section class="bannertop">
+      <section class="textdiiv">
+        <h1>OUR SERVICES</h1>
+        <p>
+          This is a parallax movement background image "coffee glass". Aliquam
+          egestas lectus semper enim malesuada, in convallis nunc sagittis.
+          Pellentesque quis tellus vel tortor malesuada egestas.
+        </p>
+      </section>
+    </section>
+    <!-------------------banner end-->
+    <!-------------------anotherdiv start-->
+    <section class="containertext">
+      <p>
+        Aenean convallis justo purus, id pulvinar enim finibus vitae. Fusce et
+        bibendum nisi, vitae mollis turpis. Aliquam tellus mi, maximus vel orci
+        imperdiet, convallis cursus tortor. Donec sollicitudin metus sit amet
+        nisl rhoncus, id ultrices risus interdum. Proin mollis nulla nulla, ac
+        cursus enim ornare a. Cras quis porta lectus. Pellentesque eu ultrices
+        arcu. Proin ac tristique dui. Praesent mi odio, aliquam ac leo sit amet,
+        dictum sodales diam.
+      </p>
+      <p>
+        Quisque commodo, orci eget suscipit vestibulum, metus orci fringilla
+        urna, eget dignissim justo odio sit amet tellus. Morbi dapibus molestie
+        massa nec congue. Etiam lacinia pretium psuere. Integer sodales
+        porttitor lobortis. Nam vestibulum vestibulum lectus non pulvinar.
+        Vivamus eget sapien vitae magna lobortis rhoncus molestie sit amet est.
+        Fusce ultrices justo vitae blandit consequat.
+      </p>
+    </section>
+    <!-------------------anotherdiv end-->
+    <!-------------------------lastdiv start-->
+    <section class="mid">
+      <section class="imgimg fl">
+        <ul>
+          <li id="the1">SERVICE TAB ONE</li>
+          <li id="the2">SERVICE TAB TWO</li>
+          <li id="the3">SERVICE TAB THREE</li>
+        </ul>
+      </section>
+      <section class="texttext fr">
+        <section id="tab1">
+          <h1>Service Tab One</h1>
+          <p>
+            Etiam egestas metus vitae est interdum, in eleifend nunc volutpat.
+            Aliquam molestie ipsum quis suscipit lacinia. Mauris turpis libero,
+            iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce
+            viverra ullamcorper metus. Curabitur puvinar suscipit sapien ac
+            blandit. Aliquam vel pulvinar purus, sit amet luctus urna.
+          </p>
+          <p>
+            Nam consequat, leo vitae aliquet dignissim, leo est laoreet nibh,
+            nec dictum libero justo vitae dolor. Donec tristique eros at nisi
+            elementum efficitur. Proin ornare feugiat ex placerat pellenteqsue.
+            Nulla convallis est volutpat ex ultrices facilisis.
+          </p>
+        </section>
+        <section id="tab2">
+          <h1>Service Tab Two</h1>
+          <p>
+            Nam consequat, leo vitae aliquet dignissim, leo est laoreet nibh,
+            nec dictum libero justo vitae dolor. Donec tristique eros at nisi
+            elementum efficitur. Proin ornare feugiat ex placerat pellenteqsue.
+            Nulla convallis est volutpat ex ultrices facilisis.
+          </p>
+          <p>
+            Etiam egestas metus vitae est interdum, in eleifend nunc volutpat.
+            Aliquam molestie ipsum quis suscipit lacinia. Mauris turpis libero,
+            iaculis non dictum ac, ornare a massa. Duis id lorem purus. Fusce
+            viverra ullamcorper metus. Curabitur puvinar suscipit sapien ac
+            blandit. Aliquam vel pulvinar purus, sit amet luctus urna.
+          </p>
+        </section>
+        <section id="tab3">
+          <h1>Service Tab Three</h1>
+          <p>
+            Mauris turpis libero, iaculis non dictum ac, ornare a massa. Duis id
+            lorem purus. Fusce viverra ullamcorper metus. Curabitur puvinar
+            suscipit sapien ac blandit. Aliquam vel pulvinar purus, sit amet
+            luctus urna. Nulla convallis est volutpat ex ultrices facilisis.
+          </p>
+          <p>
+            Etiam egestas metus vitae est interdum, in eleifend nunc volutpat.
+            Aliquam molestie ipsum quis suscipit lacinia. Nam consequat, leo
+            vitae aliquet dignissim, leo est laoreet nibh, nec dictum libero
+            justo vitae dolor. Donec tristique eros at nisi elementum efficitur.
+            Proin ornare feugiat ex placerat pellenteqsue.
+          </p>
+        </section>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!-------------------------lastdiv end-->
+
+    <!----------------------------footer start-->
+    <footer>
+      <section class="img_container fl">
+        <img src="images/1.jpg" height="100%" width="100%" alt="" />
+      </section>
+      <section class="text_container fr">
+        <h1>Images by Unsplash</h1>
+        <p>
+          You may browse Too CSS website for the collection of CSS templates for
+          your projects. Aliquam erat volutpat. Nulla eros est, imperdiet vel
+          feugiat non, ullamcorper mattis nulla.
+        </p>
+        <form action="" method="post">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id="emailid"
+            />
+            <input type="submit" value="Get Updates" id="btn" />
+          </p>
+        </form>
+      </section>
+      <section class="clr"></section>
+      <p id="footer_text">
+        Copyright © 2020 App Landing Page. Designed by TemplateMo
+      </p>
+    </footer>
+    <!----------------------------footer end-->
+  </body>
+</html>

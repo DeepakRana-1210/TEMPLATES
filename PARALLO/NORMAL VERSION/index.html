@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /******************************navigation start*************************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 20vh;
+        width: 100%;
+        background-color: antiquewhite;
+      }
+      #logo {
+        height: 14vh;
+        width: 400px;
+        position: absolute;
+        left: 5%;
+        top: 3vh;
+        text-align: center;
+        padding-top: 2%;
+        position: relative;
+      }
+      #logo i {
+        position: absolute;
+        left: 10px;
+        font-size: 100px;
+        top: 15px;
+      }
+      #logo h1 {
+        font-size: 30px;
+      }
+      nav {
+        height: 10vh;
+        width: 70%;
+        position: absolute;
+        right: 5%;
+        top: 5vh;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1.5% 2%;
+        background-color: rgba(172, 255, 47, 0.486);
+        line-height: 10vh;
+        font-size: 25px;
+        color: black;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /******************************navigation end*************************/
+
+      /*****************************footer start****************************/
+      footer {
+        height: 50vh;
+        width: 100%;
+        padding: 2% 10%;
+        text-align: center;
+      }
+      .img_container {
+        height: 50vh;
+        width: 30%;
+        background-color: chartreuse;
+      }
+      .text_container {
+        height: 50vh;
+        width: 69%;
+        background-color: lightcoral;
+        padding: 5%;
+      }
+      .text_container h1 {
+        text-align: left;
+        font-size: 40px;
+      }
+      .text_container p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 40px;
+      }
+      .text_container input {
+        height: 50px;
+        padding: 1%;
+      }
+      #emailid {
+        width: 50%;
+        margin-top: 40px;
+      }
+      #btn {
+        padding: 1% 2%;
+      }
+      #footer_text {
+        padding-top: 8%;
+        font-size: 20px;
+      }
+      /*****************************footer end****************************/
+
+      /*******************************container start*****************************/
+      .mid {
+        width: 60%;
+        margin: auto;
+        padding: 5% 0% 5% 0%;
+      }
+      .imagediv {
+        height: 80vh;
+        width: 35%;
+        border: 5px solid whitesmoke;
+        border-radius: 20px;
+      }
+      .textdiv {
+        height: 80vh;
+        width: 64%;
+        padding: 5%;
+      }
+      .textdiv h2 {
+        font-size: 30px;
+        padding-bottom: 8%;
+      }
+      .textdiv h1 {
+        font-size: 70px;
+        margin-top: 50px;
+      }
+      .textdiv p {
+        margin-top: 30px;
+        line-height: 1.6;
+        font-size: 20px;
+      }
+      .textdiv button {
+        padding: 2%;
+        margin-top: 50px;
+      }
+      /*******************************container end*****************************/
+
+      /*******************************boxes start******************************/
+      .minibox {
+        padding: 2% 1%;
+        width: 32.66%;
+        background-color: pink;
+        text-align: center;
+      }
+      .minibox h1 {
+        padding: 10% 0%;
+        font-size: 30px;
+      }
+      .minibox p {
+        font-size: 20px;
+        padding: 10% 5%;
+      }
+      .minibox button {
+        padding: 4%;
+      }
+      .minibox button:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      .logosection {
+        font-size: 150px;
+        text-align: center;
+        padding-bottom: 5%;
+      }
+      /*******************************boxes start******************************/
+    </style>
+  </head>
+  <body>
+    <!------------------------nevigation start-->
+    <header>
+      <section id="logo">
+        <i class="fas fa-pen-square"></i>
+        <h1>PARALLO</h1>
+        <p>new app landing page</p>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------nevigation end-->
+
+    <!----------------------container star-->
+    <section class="mid">
+      <section class="textdiv fl">
+        <h2>WE CAN DEVELOP</h2>
+        <hr />
+        <h1>Mobile App for Your Business</h1>
+        <p>
+          Parallo is a landing page template based on Bootstrap v4.3.1
+          framework. Please tell your friends about TemplateMo. Thank you.
+        </p>
+        <button>Learn More</button>
+      </section>
+      <section class="imagediv fr">
+        <img src="images/2.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!----------------------container end-->
+    <!-----------------threebox start-->
+    <section class="mid">
+      <section class="minibox fl">
+        <h1>High Performance</h1>
+        <section class="logosection">
+          <i class="fas fa-satellite-dish"></i>
+        </section>
+        <p>
+          Download and use this layout for your sites. Total 5 HTML pages
+          included.
+        </p>
+        <button>Learn More</button>
+      </section>
+      <section class="minibox new">
+        <h1>Fast Support</h1>
+        <section class="logosection"><i class="fas fa-database"></i></section>
+        <p>
+          You are allowed to use this for commercial purpose or personal site.
+        </p>
+        <button>Learn More</button>
+      </section>
+      <section class="minibox fr">
+        <h1>App Marketing</h1>
+        <section class="logosection"><i class="fas fa-music"></i></section>
+        <p>
+          You are NOT allowed to redistribute this template on any download
+          site.
+        </p>
+        <button>Learn More</button>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!-----------------threebox end-->
+    <!----------------------------footer start-->
+    <footer>
+      <section class="img_container fl">
+        <img src="images/1.jpg" height="100%" width="100%" alt="" />
+      </section>
+      <section class="text_container fr">
+        <h1>Images by Unsplash</h1>
+        <p>
+          You may browse Too CSS website for the collection of CSS templates for
+          your projects. Aliquam erat volutpat. Nulla eros est, imperdiet vel
+          feugiat non, ullamcorper mattis nulla.
+        </p>
+        <form action="" method="post">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id="emailid"
+            />
+            <input type="submit" value="Get Updates" id="btn" />
+          </p>
+        </form>
+      </section>
+      <section class="clr"></section>
+      <p id="footer_text">
+        Copyright © 2020 App Landing Page. Designed by TemplateMo
+      </p>
+    </footer>
+    <!----------------------------footer end-->
+  </body>
+</html>

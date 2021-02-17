@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /******************************navigation start*************************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 20vh;
+        width: 100%;
+        background-color: antiquewhite;
+      }
+      #logo {
+        height: 14vh;
+        width: 400px;
+        position: absolute;
+        left: 5%;
+        top: 3vh;
+        text-align: center;
+        padding-top: 2%;
+        position: relative;
+      }
+      #logo i {
+        position: absolute;
+        left: 10px;
+        font-size: 100px;
+        top: 15px;
+      }
+      #logo h1 {
+        font-size: 30px;
+      }
+      nav {
+        height: 10vh;
+        width: 70%;
+        position: absolute;
+        right: 5%;
+        top: 5vh;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1.5% 2%;
+        background-color: rgba(172, 255, 47, 0.486);
+        line-height: 10vh;
+        font-size: 25px;
+        color: black;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /******************************navigation end*************************/
+
+      /*****************************footer start****************************/
+      footer {
+        height: 50vh;
+        width: 100%;
+        padding: 2% 10%;
+        text-align: center;
+      }
+      .img_container {
+        height: 50vh;
+        width: 30%;
+        background-color: chartreuse;
+      }
+      .text_container {
+        height: 50vh;
+        width: 69%;
+        background-color: lightcoral;
+        padding: 5%;
+      }
+      .text_container h1 {
+        text-align: left;
+        font-size: 40px;
+      }
+      .text_container p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 40px;
+      }
+      .text_container input {
+        height: 50px;
+        padding: 1%;
+      }
+      #emailid {
+        width: 50%;
+        margin-top: 40px;
+      }
+      #btn {
+        padding: 1% 2%;
+      }
+      #footer_text {
+        padding-top: 8%;
+        font-size: 20px;
+        padding-bottom: 5%;
+      }
+      /*****************************footer end****************************/
+
+      /*****************************mainboxes start********************************/
+      .mid {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+      }
+      .mid h1 {
+        padding: 5%;
+        font-size: 50px;
+      }
+      .cardbox {
+        padding: 2% 1%;
+        width: 32.66%;
+        background-color: rgba(0, 0, 0, 0.137);
+        line-height: 2;
+      }
+      .cardbox button {
+        padding: 4% 6%;
+        margin-top: 40px;
+      }
+      .cardbox h1 {
+        font-size: 30px;
+      }
+      .cardbox p {
+        font-size: 20px;
+        padding: 0% 10%;
+      }
+      .numberdiv {
+        height: 100px;
+        width: 100px;
+        border: 5px solid whitesmoke;
+        font-size: 50px;
+        font-weight: 700;
+        overflow: hidden;
+      }
+      /*****************************mainboxes end********************************/
+
+      /********************************appfeature start***************************/
+      .app {
+        height: 30vh;
+        width: 50%;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.137);
+        margin-top: 50px;
+      }
+      .bigbox {
+        height: 40vh;
+        width: 49%;
+        background-color: orange;
+        margin-top: 50px;
+      }
+      .logoim {
+        height: 100%;
+        width: 20%;
+        overflow: hidden;
+      }
+      .logoim i {
+        line-height: 40vh;
+        font-size: 120px;
+      }
+      .textim {
+        height: 100%;
+        width: 80%;
+        padding: 8% 5%;
+        overflow: hidden;
+      }
+      .textim h1 {
+        font-size: 40px;
+      }
+      .textim p {
+        line-height: 2;
+        font-size: 20px;
+      }
+      /********************************appfeature end***************************/
+    </style>
+  </head>
+  <body>
+    <!------------------------nevigation start-->
+    <header>
+      <section id="logo">
+        <i class="fas fa-pen-square"></i>
+        <h1>PARALLO</h1>
+        <p>new app landing page</p>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------nevigation end-->
+    <!--------------------mainboxes start-->
+    <section class="mid">
+      <h1>ABOUT THIS APP</h1>
+      <section class="cardbox fl">
+        <section class="numberdiv">0.1</section>
+        <h1>BEST QUALITY</h1>
+        <p>
+          Integer dapibus aliquam accumsan. Nam diam elit, mollis quis elit sed,
+          hendrerit dapibus eros. Cras auctor laoreet tortor eget. BG #0F1D20
+        </p>
+      </section>
+      <section class="cardbox new">
+        <section class="numberdiv">0.2</section>
+        <h1>SATISFACTION</h1>
+        <p>
+          Parallo is a HTML landing page template based on Bootstrap v4.3.1
+          framework. Please tell your friends about TemplateMo.
+        </p>
+        <button>More</button>
+      </section>
+      <section class="cardbox fr">
+        <section class="numberdiv">0.3</section>
+        <h1>HIGH RETURN</h1>
+        <p>
+          You are allowed to use this for commercial purpose or personal site.
+        </p>
+        <p>
+          You are NOT allowed to redistribute this template on any download site
+          or template collection sites.
+        </p>
+        <button>Details</button>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!--------------------mainboxes end-->
+
+    <!--------------------------appeature start-->
+    <section class="mid">
+      <section class="app">
+        <h1>APP FEATURES</h1>
+        <p>
+          Suspendisse finibus tellus eget sem lacinia, vel lacinia libero
+          consequat. Sed imperdiet placerat vehicula.
+        </p>
+      </section>
+      <section class="bigbox fl">
+        <section class="logoim fl"><i class="fab fa-500px"></i></section>
+        <section class="textim fr">
+          <h1>Proin scelerisque</h1>
+          <p>
+            Etiam fermentum nisi lorem, vel pharetra ipsum egestas non. Proin
+            odio ipsum, vestibulum quis elit quis, vulputate venenatis neque.
+            Nam dignissim libero.
+          </p>
+        </section>
+        <section class="clr"></section>
+      </section>
+      <section class="bigbox fr">
+        <section class="logoim fl"><i class="fab fa-500px"></i></section>
+        <section class="textim fr">
+          <h1>Integer tempor</h1>
+          <p>
+            Aliquam erat volutpat. Phasellus a odio eget enim luctus vestibulum
+            nec sed tellus. Pellentesque aliquam sem quis lobortis laoreet.
+            Donec egestas.
+          </p>
+        </section>
+        <section class="clr"></section>
+      </section>
+      <section class="clr"></section>
+      <section class="bigbox fl">
+        <section class="logoim fl"><i class="fab fa-500px"></i></section>
+        <section class="textim fr">
+          <h1>Curabitur dignissim</h1>
+          <p>
+            Donec ut odio nec nisl feugiat dictum. Quisque sit amet mattis
+            dolor. Morbi et erat vestibulum, finibus nunc quis, fermentum eros.
+            Cras laoreet eros.
+          </p>
+        </section>
+        <section class="clr"></section>
+      </section>
+      <section class="bigbox fr">
+        <section class="logoim fl"><i class="fab fa-500px"></i></section>
+        <section class="textim fr">
+          <h1>Phasellus est lorem</h1>
+          <p>
+            Suspendisse finibus tellus eget sem lacinia, vel lacinia libero
+            consequat. Sed imperdiet placerat vehicula. Etiam eu egestas nibh.
+            In turpis ligula.
+          </p>
+        </section>
+        <section class="clr"></section>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!--------------------------appeature end-->
+
+    <!----------------------------footer start-->
+    <footer>
+      <section class="img_container fl">
+        <img src="images/1.jpg" height="100%" width="100%" alt="" />
+      </section>
+      <section class="text_container fr">
+        <h1>Images by Unsplash</h1>
+        <p>
+          You may browse Too CSS website for the collection of CSS templates for
+          your projects. Aliquam erat volutpat. Nulla eros est, imperdiet vel
+          feugiat non, ullamcorper mattis nulla.
+        </p>
+        <form action="" method="post">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id="emailid"
+            />
+            <input type="submit" value="Get Updates" id="btn" />
+          </p>
+        </form>
+      </section>
+      <section class="clr"></section>
+      <p id="footer_text">
+        Copyright © 2020 App Landing Page. Designed by TemplateMo
+      </p>
+    </footer>
+    <!----------------------------footer end-->
+  </body>
+</html>

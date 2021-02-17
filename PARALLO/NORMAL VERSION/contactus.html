@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /******************************navigation start*************************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      header {
+        height: 20vh;
+        width: 100%;
+        background-color: antiquewhite;
+      }
+      #logo {
+        height: 14vh;
+        width: 400px;
+        position: absolute;
+        left: 5%;
+        top: 3vh;
+        text-align: center;
+        padding-top: 2%;
+        position: relative;
+      }
+      #logo i {
+        position: absolute;
+        left: 10px;
+        font-size: 100px;
+        top: 15px;
+      }
+      #logo h1 {
+        font-size: 30px;
+      }
+      nav {
+        height: 10vh;
+        width: 70%;
+        position: absolute;
+        right: 5%;
+        top: 5vh;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1.5% 2%;
+        background-color: rgba(172, 255, 47, 0.486);
+        line-height: 10vh;
+        font-size: 25px;
+        color: black;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /******************************navigation end*************************/
+
+      /*****************************footer start****************************/
+      footer {
+        height: 50vh;
+        width: 100%;
+        padding: 2% 10%;
+        text-align: center;
+      }
+      .img_container {
+        height: 50vh;
+        width: 30%;
+        background-color: chartreuse;
+      }
+      .text_container {
+        height: 50vh;
+        width: 69%;
+        background-color: lightcoral;
+        padding: 5%;
+      }
+      .text_container h1 {
+        text-align: left;
+        font-size: 40px;
+      }
+      .text_container p {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 40px;
+      }
+      .text_container input {
+        height: 50px;
+        padding: 1%;
+      }
+      #emailid {
+        width: 50%;
+        margin-top: 40px;
+      }
+      #btn {
+        padding: 1% 2%;
+      }
+      #footer_text {
+        padding-top: 8%;
+        font-size: 20px;
+        padding-bottom: 5%;
+      }
+      /*****************************footer end****************************/
+
+      /************************banner start**********************/
+      .mid {
+        height: 40vh;
+        width: 70%;
+        margin: auto;
+        background-image: url(images/3.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        margin-top: 50px;
+      }
+      .textdiv {
+        height: 18vh;
+        width: 100%;
+        position: absolute;
+        top: 10vh;
+        background-color: rgba(0, 0, 0, 0.39);
+        color: whitesmoke;
+        text-align: center;
+      }
+      .textdiv h1 {
+        font-size: 40px;
+        margin-top: 25px;
+      }
+      .textdiv p {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      /************************banner end**********************/
+
+      /***********************form_container start*********************/
+      .formcontainer {
+        height: 70vh;
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .bigbox {
+        width: 49%;
+        height: 100%;
+        position: relative;
+        padding: 250px 5%;
+        background-color: rgba(0, 0, 0, 0.541);
+      }
+      .bigbox h1 {
+        padding: 5% 0%;
+        font-size: 30px;
+      }
+      .bigbox p {
+        font-size: 20px;
+        line-height: 1.6;
+      }
+      .logosection {
+        height: 100px;
+        position: absolute;
+        width: 100px;
+        font-size: 150px;
+        left: 33%;
+        top: 50px;
+      }
+      .formmm {
+        padding-top: 0%;
+      }
+      .formmm input {
+        height: 50px;
+        width: 80%;
+        margin-top: 50px;
+        font-size: 18px;
+        padding-left: 2%;
+      }
+      textarea {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 20px;
+        height: 25vh;
+      }
+      #btnn {
+        border: 4px solid royalblue;
+        width: 40%;
+      }
+      #btnn:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+        border: 4px solid whitesmoke;
+      }
+      /***********************form_container end*********************/
+    </style>
+  </head>
+  <body>
+    <!------------------------nevigation start-->
+    <header>
+      <section id="logo">
+        <i class="fas fa-pen-square"></i>
+        <h1>PARALLO</h1>
+        <p>new app landing page</p>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!------------------------nevigation end-->
+    <!------------------banner start-->
+    <section class="mid">
+      <section class="textdiv">
+        <h1>CONTACT</h1>
+        <p>Parallax movement background page ice mountain for testimonials.</p>
+      </section>
+    </section>
+    <!------------------banner end-->
+    <!------------------------formcontainer start-->
+    <section class="formcontainer">
+      <section class="bigbox formmm fl">
+        <form action="" method="POST">
+          <p>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Your Name"
+              id=""
+            />
+          </p>
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id=""
+            />
+          </p>
+          <p>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter Your Message"
+            ></textarea>
+          </p>
+          <p><input type="submit" name="SUBMIT" id="btnn" /></p>
+        </form>
+      </section>
+      <section class="bigbox fr">
+        <h1>Maecenas in aliquam lorem</h1>
+        <section class="logosection"><i class="fab fa-reddit"></i></section>
+        <p>
+          Proin rutrum massa quis erat mollis iaculis. Vestibulum a risus ex.
+          Nunc rhoncus, justo at blandit cursus, orci erat molestie felis, id
+          ullamcorper mauris felis eu eros.
+        </p>
+        <p>
+          Donec turpis augue, mollis eu erat in, posuere congue sapien. Maecenas
+          facilisis dui sit amet ornare aliquam. Paesent malesuada mi a est
+          pulvinar.
+        </p>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!------------------------formcontainer end-->
+    <!----------------------------footer start-->
+    <footer>
+      <section class="img_container fl">
+        <img src="images/1.jpg" height="100%" width="100%" alt="" />
+      </section>
+      <section class="text_container fr">
+        <h1>Images by Unsplash</h1>
+        <p>
+          You may browse Too CSS website for the collection of CSS templates for
+          your projects. Aliquam erat volutpat. Nulla eros est, imperdiet vel
+          feugiat non, ullamcorper mattis nulla.
+        </p>
+        <form action="" method="post">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id="emailid"
+            />
+            <input type="submit" value="Get Updates" id="btn" />
+          </p>
+        </form>
+      </section>
+      <section class="clr"></section>
+      <p id="footer_text">
+        Copyright © 2020 App Landing Page. Designed by TemplateMo
+      </p>
+    </footer>
+    <!----------------------------footer end-->
+  </body>
+</html>
