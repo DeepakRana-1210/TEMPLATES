@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 60%;
+        margin: auto;
+        display: flex;
+      }
+      .box {
+        padding: 1% 2%;
+        width: 50%;
+        margin: 50px 30px 70px 0px;
+        text-align: justify;
+        padding: 2%;
+        line-height: 1.5;
+      }
+      .height1 {
+        padding: 1%;
+      }
+      .box h1 {
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 600;
+      }
+      .box h3 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .box p {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      button {
+        padding: 3% 8%;
+        margin-top: 20px;
+        background-color: coral;
+        color: whitesmoke;
+        font-weight: 700;
+      }
+      .footer {
+        width: 60%;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        line-height: 2;
+        padding-top: 30px;
+        margin-top: 100px;
+      }
+      #thisbutton {
+        padding: 1.5%;
+        background-color: coral;
+        color: whitesmoke;
+        font-weight: 700;
+      }
+      #thisbutton:hover {
+        background-color: rgb(231, 126, 144);
+      }
+      button:hover {
+        background-color: rgb(231, 126, 144);
+      }
+      .footer h1 {
+        font-size: 40px;
+      }
+      .footer p {
+        font-size: 18px;
+      }
+      .header {
+        height: 660px;
+        display: flex;
+        background-color: black;
+        color: whitesmoke;
+        font-weight: 700;
+      }
+      .div1 {
+        height: 660px;
+        width: 60%;
+        padding-left: 20%;
+        position: relative;
+      }
+      .div1 h1 {
+        font-size: 60px;
+        position: absolute;
+        bottom: 400px;
+      }
+      .div1 p {
+        font-size: 23px;
+        position: absolute;
+        bottom: 30px;
+        line-height: 2;
+        padding: 0% 30% 10% 0%;
+      }
+      #thisismain {
+        position: absolute;
+        bottom: 50px;
+        height: 60px;
+        width: 400px;
+        font-size: 22px;
+      }
+      #thisismain a {
+        text-decoration: none;
+      }
+      .div2 {
+        position: relative;
+        height: 660px;
+        width: 40%;
+        background-color: black;
+      }
+      #thisisimage {
+        position: absolute;
+        bottom: 0px;
+      }
+      nav {
+        height: 60px;
+        position: absolute;
+        top: 25px;
+        width: 100%;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: left;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 2% 2%;
+        color: whitesmoke;
+        line-height: 3.7;
+        text-decoration: underline;
+      }
+      nav ul li a:hover {
+        color: red;
+        transition: 1s;
+        font-size: 17px;
+      }
+      .minidiv {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .minidiv:hover {
+        height: 90px;
+        width: 90px;
+        transition: 0.5s;
+      }
+      .gg1 {
+        bottom: 60px;
+        right: 20px;
+      }
+      .gg2 {
+        bottom: 160px;
+        right: 20px;
+      }
+      .gg3 {
+        bottom: 260px;
+        right: 20px;
+      }
+      .gg4 {
+        bottom: 365px;
+        right: 20px;
+      }
+      #hellobtn {
+        padding: 5%;
+      }
+      @media only screen and (max-width: 900px) {
+        .container {
+          display: block;
+          width: 100%;
+        }
+        .box {
+          width: 100%;
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="div1">
+        <h1>I help startups design demand-driven products.</h1>
+        <p>
+          Taiyab Raja is a freelance UI & UX designer from Birmingham with
+          expertise in designing iOS, Android and web apps. Available for new
+          projects.
+        </p>
+        <span id="thisismain">
+          <button id="hellobtn">LET'S CHAT</button>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#">me@taiyab.co.uk</a><br /><br /><br /><br />
+        </span>
+      </div>
+      <div class="div2">
+        <nav>
+          <ul>
+            <li><a href="#">Intro</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Writings</a></li>
+          </ul>
+        </nav>
+        <img
+          src="Images/banner.jpg"
+          id="thisisimage"
+          height="500px"
+          width="45%"
+          alt=""
+        />
+        <div class="minidiv gg1">
+          <img src="Images/44.svg" height="100%" width="100%" alt="" />
+        </div>
+        <div class="minidiv gg2">
+          <img src="Images/33.svg" height="100%" width="100%" alt="" />
+        </div>
+        <div class="minidiv gg3">
+          <img src="Images/22.svg" height="100%" width="100%" alt="" />
+        </div>
+        <div class="minidiv gg4">
+          <img src="Images/11.svg" height="100%" width="100%" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <h1>Bytes</h1>
+        <h3>Re-imagining digital recruitment</h3>
+        <p>
+          Digital recruitment agencies are notorious for bad, old, branding,
+          strategy and workflow. We had to transform this agency from the ground
+          up: strategy, branding, visuals, mindset, training, everything to
+          bring it up to scratch in the modern tech world.
+        </p>
+        <button>View on Dribbble</button>
+      </div>
+      <div class="box">
+        <img src="Images/1.png" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <img src="Images/2.png" height="100%" width="100%" alt="" />
+      </div>
+      <div class="box">
+        <br />
+        <h1>Scandlearn</h1>
+        <h3>Aviation training that doesn't suck</h3>
+        <p>
+          The world of training tools for aviation is rather dull, uninspiring
+          and traditionally difficult to use. I was tasked to take Scandlearn's
+          existing software solution and bring it to life with a whole new UX.
+        </p>
+        <button>View on Dribbble</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box height1 hhh paddingtop">
+        <br /><br /><br /><br /><br />
+        <h1>hujjaj.co</h1>
+        <br />
+        <h3>Helping Muslims make the journey of a lifetime</h3>
+        <br />
+        <p>
+          Hajj is a special pilgrimage Muslims make once in their life. We
+          helped research and build Hujjaj.co, a service to help Muslims find
+          the perfect Hajj package for them.
+        </p>
+        <button>View on Dribbble</button>
+      </div>
+      <div class="box height1">
+        <center>
+          <img src="Images/3.gif" height="100%" alt="" />
+        </center>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <img src="Images/4.png" height="100%" alt="" />
+      </div>
+      <div class="box">
+        <br /><br />
+        <h1>Ajwa Aliyah</h1>
+        <h3>Premium dates grown in the soil of the haram, Madinah.</h3>
+        <p>
+          The Western Muslim market needed a gift truly fit for special
+          occasions. We developed Ajwa Aliyah, dates imported from the sacred
+          area of Madinah.
+        </p>
+        <button>View on Dribbble</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <br />
+        <h1>Bluetel</h1>
+        <h3>Reinventing a development agency.</h3>
+        <p>
+          A local development agency needed a rebrand to transform <br />
+          their company image to reflect their ethos.
+        </p>
+        <button>View on Dribbble</button>
+      </div>
+      <div class="box">
+        <img src="Images/5.jpg" width="100%" height="100%" alt="" />
+      </div>
+    </div>
+    <div class="footer">
+      <h1>Got a project in mind? Let's chat.</h1>
+      <br />
+      <p>
+        Whether you have a particular project in mind you’d like me to help
+        with, or you just want advice and feedback on anything, just ask.
+      </p>
+      <br />
+      <button id="thisbutton">LET'S CHAT</button>
+      &nbsp;&nbsp;&nbsp;
+      <a href="#">me@taiyab.co.uk</a><br /><br /><br /><br />
+      <p>Copyright © plz no steal</p>
+      <br /><br />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#mainbtn").click(function () {
+          $("#hellonav").slideToggle(800);
+        });
+        $("#dark").click(function () {
+          $("*").css({
+            "background-image": " url(Images/fff.jpg)",
+            color: "white",
+            "box-shadow": "none",
+          });
+          $(".box1,.box3").css({
+            border: "1px solid whitesmoke",
+          });
+        });
+        $("#light").click(function () {
+          $("*").css({
+            "background-image": " url(Images/ffff.jpg)",
+            color: "black",
+          });
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .width {
+        height: auto;
+        width: 70%;
+        margin: auto;
+      }
+      h1 {
+        color: rgba(50, 97, 240, 0.753);
+      }
+      a:hover {
+        color: royalblue;
+        text-decoration: underline;
+      }
+      .hellobtns button {
+        padding: 1%;
+        background-color: royalblue;
+        font-weight: 700;
+        color: whitesmoke;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      /**********************header start***********************/
+      header {
+        height: 60px;
+        width: 100%;
+        position: relative;
+      }
+      #logo {
+        height: 60px;
+        width: 200px;
+        position: absolute;
+        left: 50px;
+        top: 5px;
+        overflow: hidden;
+      }
+      header nav {
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        right: 0px;
+      }
+      header nav ul {
+        list-style-type: none;
+        text-align: center;
+      }
+      header nav ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        background-color: rgb(117, 117, 68);
+        line-height: 3.2;
+        border-radius: 5px;
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      header nav ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.404);
+      }
+      #highlight {
+        border: 2px solid rgb(158, 94, 94);
+        border-radius: 20px;
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      #mainbtn {
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.288);
+        position: absolute;
+        top: 5px;
+        display: none;
+        right: 20px;
+      }
+      /**********************header end***********************/
+      /***********container1 start*******/
+      .text_container {
+        height: 600px;
+        width: 50%;
+        padding: 15% 8% 0% 1%;
+        margin-top: 100px;
+      }
+      .text_container h1 {
+        font-size: 60px;
+        padding: 0% 10% 1% 0%;
+      }
+      .text_container p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-top: 20px;
+      }
+      .text_container button {
+        padding: 2%;
+        margin-top: 25px;
+        font-size: 18px;
+        background-color: rgba(218, 34, 64, 0.589);
+        color: white;
+      }
+      .text_container button:hover {
+        background-color: royalblue;
+      }
+      .image_container {
+        height: 600px;
+        width: 50%;
+        margin-top: 100px;
+      }
+      /***********container1 end*******/
+      /**************container2 start*************************/
+      .big_text {
+        font-size: 50px;
+        padding: 8% 25% 5% 25%;
+        text-align: center;
+        color: #2b4b80;
+      }
+      .box1 {
+        width: 32.66%;
+        position: relative;
+        padding: 160px 5% 2% 5%;
+        text-align: center;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        border-radius: 5px;
+      }
+      .box1 h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
+      .box1 p {
+        font-size: 18px;
+        line-height: 1.4;
+        padding-bottom: 20px;
+      }
+      .img_section {
+        height: 120px;
+        width: 120px;
+        background-color: yellow;
+        position: absolute;
+        top: 20px;
+        left: 35%;
+      }
+      /**************container2 end*************************/
+      /*************container3 start********************/
+      .normalpadding {
+        padding: 5% 5% 0% 0%;
+      }
+      /*************container3 end********************/
+      /*******************container4 start*****************/
+      .box2 {
+        width: 48%;
+        border: 1px solid rgb(202, 181, 181);
+        border-radius: 5px;
+        margin-top: 40px;
+        padding: 2% 0% 2% 0%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .min_logo {
+        height: 150px;
+        width: 20%;
+        padding: 4% 2%;
+      }
+      .min_text {
+        height: 150px;
+        width: 80%;
+        padding: 5% 5% 2% 5%;
+      }
+      .min_text h1 {
+        font-size: 25px;
+        padding: 1% 0% 2% 0%;
+      }
+      .min_text p {
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      /*******************container4 end*****************/
+      /*******************container5 start***************/
+      .box3 {
+        width: 32.66%;
+        padding: 1%;
+        text-align: center;
+        line-height: 2;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        border-radius: 5px;
+      }
+      .box3 h1 {
+        font-size: 50px;
+      }
+      .Main_img {
+        height: 180px;
+        width: 50%;
+        margin-left: 25%;
+      }
+      .box3 ul li {
+        font-size: 18px;
+      }
+      /*******************container5 end***************/
+      /*****************container6 start**************/
+      .box4 {
+        height: 450px;
+        width: 24.25%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .hover_div {
+        height: 140px;
+        width: 70%;
+        position: absolute;
+        bottom: -50px;
+        left: 30px;
+        padding: 1% 0% 0% 5%;
+        background-color: whitesmoke;
+        border-radius: 20px;
+      }
+      .hover_div h1 {
+        font-size: 40px;
+      }
+      .hover_div p {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      /*****************container6 end**************/
+      /*****************container7 start**************/
+      .Imgacontainer {
+        height: 300px;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+      .Imgacontainer:hover img {
+        transform: scale(1.2);
+        transition: 1.2s;
+      }
+      .maintext h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        padding: 5% 0% 2% 0%;
+      }
+      .maintext p {
+        font-size: 20px;
+        line-height: 3;
+        text-align: left;
+      }
+      .pinktext {
+        color: rgb(241, 74, 102);
+      }
+      /*****************container7 end**************/
+      /***************************footer start******************/
+      footer {
+        margin-top: 100px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        font-size: 18px;
+      }
+      .boxv {
+        height: 480px;
+        width: 33.33%;
+        float: left;
+        padding: 2% 0% 0% 2%;
+        color: rgb(19, 18, 18);
+      }
+      .boxv h1 {
+        font-size: 30px;
+        padding: 1% 0% 2% 0%;
+      }
+      .boxv input {
+        height: 40px;
+        width: 70%;
+        padding-left: 2%;
+        font-weight: 700;
+      }
+      .boxv button {
+        padding: 1%;
+        margin-top: 10px;
+      }
+      .boxv i {
+        padding: 1%;
+      }
+      footer ul {
+        list-style-type: none;
+      }
+      footer ul li {
+        line-height: 1.6;
+      }
+      footer ul li i {
+        color: rgb(58, 57, 57);
+      }
+      footer ul li i:hover {
+        color: rgb(0, 0, 0);
+      }
+      footer nav ul li {
+        display: inline;
+        margin-left: 10px;
+      }
+      footer nav ul li a {
+        text-decoration: none;
+        font-size: 30px;
+      }
+      #footer_text {
+        text-align: center;
+        color: rgb(24, 23, 23);
+      }
+      hr {
+        height: 2px;
+        width: 80%;
+        margin-left: 10%;
+      }
+      /*******************media query***********************/
+      @media (max-width: 1400px) {
+        header nav {
+          width: 80%;
+        }
+        .width {
+          width: 100%;
+        }
+        .text_container {
+          padding: 15% 2% 0% 2%;
+        }
+        .normalpadding {
+          padding: 3% 0% 0% 0%;
+        }
+        .big_text {
+          padding: 8% 20% 5% 20%;
+        }
+        .box4 {
+          width: 32.66%;
+          margin-top: 50px;
+          float: none;
+        }
+        .main1 {
+          float: left;
+        }
+        .hh {
+          float: left;
+          margin-left: 1%;
+        }
+        .gg {
+          display: none;
+        }
+      }
+      @media (max-width: 880px) {
+        header nav {
+          width: 100%;
+          top: 80px;
+          background-color: white;
+          display: none;
+          height: auto;
+        }
+        #mainbtn {
+          display: block;
+        }
+        #mainbtn:hover {
+          color: royalblue;
+        }
+        header nav ul {
+          text-align: left;
+        }
+        header nav ul li {
+          display: block;
+        }
+        header nav ul li a {
+          line-height: 2.5;
+          background: none;
+          color: black;
+          border-radius: 20px;
+          padding: 1% 80% 1% 5%;
+        }
+        header nav ul li a:hover {
+          border: 2px solid rgba(0, 0, 0, 0.445);
+          color: white;
+          background-color: royalblue;
+        }
+        .boxv {
+          float: left;
+          width: 50%;
+          height: 400px;
+          border: 1px solid whitesmoke;
+        }
+        .hello {
+          float: none;
+          clear: both;
+          width: 100%;
+          height: auto;
+        }
+        .hel1 {
+          width: 50%;
+          float: left;
+          border: 1px solid whitesmoke;
+        }
+        .hel2 {
+          width: 50%;
+          float: right;
+          padding-left: 10%;
+          border: 1px solid whitesmoke;
+        }
+        .hel3 {
+          clear: both;
+        }
+      }
+      @media (max-width: 750px) {
+        .text_container {
+          width: 100%;
+          background-color: yellow;
+          height: auto;
+          padding: 4%;
+        }
+        .image_container {
+          display: none;
+        }
+        .big_text {
+          font-size: 25px;
+          padding: 5%;
+        }
+        .hover_div a {
+          font-size: 25px;
+        }
+
+        .box1 {
+          width: 60%;
+          float: none;
+          margin: auto;
+        }
+        .box2 {
+          width: 100%;
+        }
+        .box3 {
+          width: 60%;
+          margin: auto;
+          margin-top: 50px;
+          float: none;
+        }
+        .box4 {
+          width: 60%;
+          float: none;
+          margin: auto;
+        }
+        .space {
+          height: 50px;
+          width: 100%;
+        }
+        .gg {
+          display: block;
+        }
+      }
+      @media (max-width: 600px) {
+        .box1 {
+          width: 80%;
+        }
+
+        .box3 {
+          width: 80%;
+        }
+        .box4 {
+          width: 80%;
+        }
+      } ;
+    </style>
+  </head>
+  <body>
+    <section class="hellobtns">
+      <button id="dark">Dark Theme</button>
+      <button id="light">Light Theme</button>
+    </section>
+    <section class="width">
+      <!------------------------header start-->
+      <header>
+        <section id="logo">
+          <img src="Images/logo.png" height="50px" width="100px" alt="" />
+        </section>
+        <nav id="hellonav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a id="highlight" href="#">Home</a></li>
+          </ul>
+        </nav>
+        <section id="mainbtn"><i class="fas fa-th"></i></section>
+      </header>
+      <!------------------------header end-->
+      <!------------------container1 start--->
+      <section class="text_container fl">
+        <h1>We Collect High Quality Leads</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          emiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          ipsum suspendisse ultrices gravi.
+        </p>
+        <button>Contact Us</button>
+      </section>
+      <section class="image_container fr">
+        <img src="Images/1.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="clr"></section>
+      <!------------------container1 end--->
+      <!------------------container2 start--->
+
+      <h1 class="big_text">What We Will Do For Your Business​</h1>
+      <section class="box1 fl">
+        <section class="img_section">
+          <img src="Images/11.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Link Building</h1>
+        <p>
+          Hunky dory barney fanny around up the duff no biggie loo cup of tea
+          jolly good ruddy say arse!
+        </p>
+        <a href="#"> GET STARTED</a>
+      </section>
+      <section class="space"></section>
+      <section class="box1 new">
+        <section class="img_section">
+          <img src="Images/11.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>Content marketing</h1>
+        <p>
+          Hunky dory barney fanny around up the duff no biggie loo cup of tea
+          jolly good ruddy say arse!
+        </p>
+        <a href="#"> GET STARTED</a>
+      </section>
+      <section class="space"></section>
+      <section class="box1 fr">
+        <section class="img_section">
+          <img src="Images/11.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>On Page SEO</h1>
+        <p>
+          Hunky dory barney fanny around up the duff no biggie loo cup of tea
+          jolly good ruddy say arse!
+        </p>
+        <a href="#"> GET STARTED</a>
+      </section>
+      <section class="clr"></section>
+      <!------------------container2 end--->
+      <!------------------container3 start--->
+      <section class="text_container normalpadding fr">
+        <h1>We Create a Steps to Build a Successful Digital Product</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+          lacus vel facilisis orem ipsum dolor sit amet, consectetur adipiscing.
+        </p>
+        <button>Contact Us</button>
+      </section>
+      <section class="image_container fl">
+        <img src="Images/2.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="clr"></section>
+      <!------------------container3 end--->
+      <!---------------------container4 start-->
+      <h1 class="big_text">Generating New Customers Via Online Mode​​</h1>
+      <section class="box2 fl">
+        <section class="min_logo fl">
+          <img src="Images/44.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="min_text fr">
+          <h1>All Sizes Business</h1>
+          <p>
+            Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+            suspendis incididun se ultrices gravida.
+          </p>
+        </section>
+      </section>
+      <section class="box2 fr">
+        <section class="min_logo fl">
+          <img src="Images/55.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="min_text fr">
+          <h1>Awesome Results</h1>
+          <p>
+            Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+            suspendis incididun se ultrices gravida.
+          </p>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <section class="box2 fl">
+        <section class="min_logo fl">
+          <img src="Images/66.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="min_text fr">
+          <h1>Keep you in the Loop</h1>
+          <p>
+            Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+            suspendis incididun se ultrices gravida.
+          </p>
+        </section>
+      </section>
+      <section class="box2 fr">
+        <section class="min_logo fl">
+          <img src="Images/77.png" height="100%" width="100%" alt="" />
+        </section>
+        <section class="min_text fr">
+          <h1>Significant ROI</h1>
+          <p>
+            Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum
+            suspendis incididun se ultrices gravida.
+          </p>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <!---------------------container4 end-->
+      <!------------------container5 start-->
+      <h1 class="big_text">Choose Your Very Best Pricing Plan</h1>
+      <section class="box3 fl">
+        <section class="Main_img">
+          <img src="Images/88.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>$ 05.00</h1>
+        <ul>
+          <li>Increase traffic 50%</li>
+          <li>Social Media Marketing</li>
+          <li>10 Free Optimization</li>
+          <li>24/7 support</li>
+        </ul>
+      </section>
+      <section class="box3 new">
+        <section class="Main_img">
+          <img src="Images/99.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>$ 05.00</h1>
+        <ul>
+          <li>Increase traffic 50%</li>
+          <li>Social Media Marketing</li>
+          <li>10 Free Optimization</li>
+          <li>24/7 support</li>
+        </ul>
+      </section>
+      <section class="box3 fr">
+        <section class="Main_img">
+          <img src="Images/00.png" height="100%" width="100%" alt="" />
+        </section>
+        <h1>$ 05.00</h1>
+        <ul>
+          <li>Increase traffic 50%</li>
+          <li>Social Media Marketing</li>
+          <li>10 Free Optimization</li>
+          <li>24/7 support</li>
+        </ul>
+      </section>
+      <section class="clr"></section>
+      <!------------------container5 end-->
+      <h1 class="big_text">Visit Some Of Our Awsome Stuffs</h1>
+
+      <!-------------------------------->
+    </section>
+    <!-------------------------------->
+
+    <!---------------------container6 start-->
+    <section class="box4 main1 fl">
+      <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+      <section class="hover_div">
+        <h1><a href="#">citmv.com</a></h1>
+        <p>Email Marketing</p>
+      </section>
+    </section>
+    <section class="space"></section>
+    <section class="box4 hh new">
+      <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+      <section class="hover_div">
+        <h1><a href="#">citmv.com</a></h1>
+        <p>Email Marketing</p>
+      </section>
+    </section>
+    <section class="space"></section>
+    <section class="box4 hh new">
+      <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+      <section class="hover_div">
+        <h1><a href="#">citmv.com</a></h1>
+        <p>Email Marketing</p>
+      </section>
+    </section>
+    <section class="space"></section>
+    <section class="box4 gg fr">
+      <img src="Images/3.jpg" height="100%" width="100%" alt="" />
+      <section class="hover_div">
+        <h1><a href="#">citmv.com</a></h1>
+        <p>Email Marketing</p>
+      </section>
+    </section>
+    <section class="clr"></section>
+    <!---------------------container6 end-->
+    <section class="width">
+      <!--------------------------container7 start-->
+      <h1 class="big_text">Tips and Tricks From Our Exparts</h1>
+      <section class="box3 fl">
+        <section class="Imgacontainer">
+          <img src="Images/8.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <section class="maintext">
+          <h1>Twice profit than before you ever got</h1>
+          <p>
+            <img src="Images/line.jpg" height="5px" width="30%" alt="" />
+            Continue Reading
+          </p>
+          <p class="pinktext">March 3, 2020</p>
+        </section>
+      </section>
+      <section class="box3 new">
+        <section class="Imgacontainer">
+          <img src="Images/9.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <section class="maintext">
+          <h1>Twice profit than before you ever got</h1>
+          <p>
+            <img
+              src="Images/line.jpg"
+              height="5px"
+              width="30%"
+              alt=""
+            />Continue Reading
+          </p>
+          <p class="pinktext">March 3, 2020</p>
+        </section>
+      </section>
+      <section class="box3 fr">
+        <section class="Imgacontainer">
+          <img src="Images/0.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <section class="maintext">
+          <h1>Twice profit than before you ever got</h1>
+          <p>
+            <img
+              src="Images/line.jpg"
+              height="5px"
+              width="30%"
+              alt=""
+            />Continue Reading
+          </p>
+          <p class="pinktext">March 3, 2020</p>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <!--------------------------container7 end-->
+    </section>
+    <!-----------------------footer start-->
+    <footer>
+      <section class="boxv">
+        <h1>Sign Up For Our Newsletter</h1>
+        <form action="" method="POST">
+          <p>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Enter Your Name"
+              id=""
+            />
+          </p>
+          <br />
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id=""
+            />
+          </p>
+        </form>
+        <br />
+        <button>SignUp For New Newsletter</button>
+        <br />
+        <br />
+        <h1>Stay In Touch:</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-invision"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="boxv">
+        <h1>Featured Services</h1>
+        <br /><br />
+        <ul>
+          <li><i class="fas fa-arrow-right"></i>&nbsp;Custom Website Design</li>
+          <li><i class="fas fa-arrow-right"></i>&nbsp;Website Development</li>
+          <li><i class="fas fa-arrow-right"></i>&nbsp;WordPress Development</li>
+          <li>
+            <i class="fas fa-arrow-right"></i>&nbsp;Search Engine Optimization
+          </li>
+          <li>
+            <i class="fas fa-arrow-right"></i>&nbsp;Ecommerce Development
+            Company
+          </li>
+          <li>
+            <i class="fas fa-arrow-right"></i>&nbsp;Affordable Ecommerce Website
+          </li>
+          <li>
+            <i class="fas fa-arrow-right"></i>&nbsp;Search Engine Optimization
+          </li>
+          <li>
+            <i class="fas fa-arrow-right"></i>&nbsp;Digital Marketing Agency
+          </li>
+        </ul>
+      </section>
+      <section class="boxv hello">
+        <section class="hel1">
+          <h1>Other Industries We Serve</h1>
+          <ul id="fll">
+            <li>
+              <i class="fas fa-arrow-right"></i>&nbsp;Church Website Design
+            </li>
+            <li>
+              <i class="fas fa-arrow-right"></i>&nbsp;Dental Website Design
+            </li>
+            <li>
+              <i class="fas fa-arrow-right"></i>&nbsp;Industrial Web Design
+            </li>
+            <li>
+              <i class="fas fa-arrow-right"></i>&nbsp;Non Profit Website Design
+            </li>
+            <li>
+              <i class="fas fa-arrow-right"></i>&nbsp;Websites for Accountants
+            </li>
+          </ul>
+        </section>
+        <section class="hel2">
+          <h1>Contact Us</h1>
+          <ul id="frr">
+            <li><i class="fas fa-arrow-right"></i>&nbsp;Career</li>
+            <li><i class="fas fa-arrow-right"></i>&nbsp;Blog</li>
+            <li><i class="fas fa-arrow-right"></i>&nbsp;Contact</li>
+            <li><i class="fas fa-arrow-right"></i>&nbsp;Request A Quote</li>
+            <li><i class="fas fa-arrow-right"></i>&nbsp;Outsource To Us</li>
+          </ul>
+        </section>
+      </section>
+      <br /><br />
+      <br />
+      <hr />
+      <br />
+      <p id="footer_text">
+        © 2004 - 2020 Ray Creations. All Rights Reserved | Privacy Policy
+      </p>
+      <br />
+    </footer>
+  </body>
+</html>

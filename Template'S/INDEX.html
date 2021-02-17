@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button#dark").click(function () {
+          $("*").css({
+            "background-image": "url(3.jpg)",
+            color: "whitesmoke",
+          });
+
+          $(".boxx, .hellobox").css({ "box-shadow": "3px 3px 5px 6px #ccc" });
+        });
+        $("button#light").click(function () {
+          $("*").css({ "background-image": "url(11.jpg)", color: "black" });
+        });
+      });
+    </script>
+    <style>
+      /*************************header start*******************/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fll {
+        float: left;
+      }
+      .frr {
+        float: right;
+      }
+      .neww {
+        float: left;
+        margin-left: 1%;
+      }
+      .fl {
+        float: left;
+        margin-left: 10%;
+      }
+      .fr {
+        float: right;
+        margin-right: 10%;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .header {
+        height: 60px;
+        width: 80%;
+        background-color: yellow;
+        margin: auto;
+        position: relative;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .logo {
+        height: 60px;
+        width: 200px;
+        background-color: red;
+        position: absolute;
+        left: 8%;
+      }
+      .nav {
+        height: 60px;
+        width: 70%;
+        background-color: aqua;
+        position: absolute;
+        right: 8%;
+      }
+      .nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 10%;
+      }
+      .nav ul li {
+        display: inline;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        background-color: red;
+        padding: 1% 2%;
+        line-height: 3.5;
+      }
+      /*************************header end*******************/
+      /*************************banner start***********************************/
+      .box {
+        height: 400px;
+        width: 39%;
+        background-color: red;
+        margin-top: 20px;
+        overflow: hidden;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .text {
+        padding: 2%;
+      }
+      #para {
+        margin-top: 20px;
+      }
+      .btn {
+        height: 40px;
+        padding: 0% 2%;
+        margin-top: 20px;
+        margin-left: 2%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .btn1 {
+        margin-left: 10%;
+      }
+      #searchbox {
+        height: 50px;
+        width: 40%;
+        margin-left: 10%;
+        margin-top: 20px;
+        border-radius: 5px;
+        padding-left: 3%;
+        font-weight: 700;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      /*************************banner end***********************************/
+      .bood {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .boxx {
+        border-radius: 10px;
+        height: 450px;
+        width: 26%;
+        background-color: red;
+        margin-top: 20px;
+      }
+      .hell {
+        margin-left: 10%;
+      }
+      .immg {
+        border-radius: 10px;
+        margin-top: 5%;
+      }
+      .bood h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .parr {
+        width: 70%;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+      }
+      .hellbtn {
+        border-radius: 5px;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        height: 40px;
+        width: 50%;
+        background-color: yellowgreen;
+        margin-top: 24px;
+      }
+      .minibox {
+        height: 400px;
+        width: 40%;
+
+        margin-top: 50px;
+        background-color: skyblue;
+      }
+      .bob {
+        margin-left: 10%;
+      }
+      .minibox h1 {
+        padding-top: 100px;
+        text-align: center;
+      }
+      #papp {
+        line-height: 2;
+        padding-top: 10px;
+        width: 60%;
+        margin: auto;
+      }
+      .hellobox {
+        height: 300px;
+        background-color: red;
+        width: 32.7%;
+        margin-top: 10px;
+      }
+      .mainsection p {
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+      }
+      .mainsection h1 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .mainsection {
+        height: 750px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .immm {
+        margin-left: 30%;
+        margin-top: 20px;
+      }
+      .hhtext {
+        text-align: center;
+      }
+      .paramini {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+      }
+      #readmor {
+        height: 40px;
+        padding: 1% 3%;
+      }
+      #pp {
+        text-align: center;
+      }
+      .anotherdiv {
+        height: 400px;
+        width: 39%;
+        background-color: aqua;
+        margin-top: 20px;
+      }
+      .flll {
+        margin-left: 10%;
+      }
+      .frrr {
+        margin-right: 10%;
+      }
+      .hema {
+        height: 40px;
+        width: 80%;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .hhh {
+        padding-left: 5%;
+      }
+      #textarea {
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .footer {
+        height: 500px;
+        width: 80%;
+        margin: auto;
+        background-color: blueviolet;
+        margin-top: 20px;
+      }
+      #light {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        padding: 0.5%;
+        background-color: whitesmoke;
+      }
+      #dark {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        padding: 0.5%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="dark">Dark Theme</button>
+    <button id="light">Light Theme</button>
+    <!-----------------hedaer strat------------>
+    <div class="header">
+      <div class="logo"></div>
+      <div class="nav">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">HOME</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-----------------hedaer end------------>
+    <!-----------------banner strat------------>
+    <div class="box fl text">
+      <h1>Hello This is the Heading</h1>
+      <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+        necessitatibus tenetur facilis a animi ex sunt exercitationem, numquam
+        dignissimos culpa totam dolore officia architecto. Distinctio dolorum
+        necessitatibus voluptatum sapiente deleniti!Nemo voluptatum explicabo,
+        sequi reprehenderit reiciendis laborum voluptatem dolores consectetur
+        minus omnis incidunt adipisci tenetur vel laudantium quos debitis aut
+        fugit blanditiis quae harum eius. Tempore reprehenderit dignissimos
+        necessitatibus laborum!
+      </p>
+      <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+        necessitatibus tenetur facilis a animi ex sunt exercitationem, numquam
+        dignissimos culpa totam dolore officia architecto. Distinctio dolorum
+        necessitatibus voluptatum sapiente deleniti!Nemo voluptatum explicabo,
+        sequi reprehenderit reiciendis laborum voluptatem dolores consectetur
+        minus omnis incidunt adipisci tenetur vel laudantium quos debitis aut
+        fugit blanditiis quae harum eius. Tempore reprehenderit dignissimos
+        necessitatibus laborum!
+      </p>
+    </div>
+    <div class="box fr">
+      <img src="Images/1.png" height="100%" width="100%" alt="" />
+    </div>
+    <button class="btn btn1">GET STARTED</button>
+    <button class="btn">CONTACT US</button>
+    <form action="" method="POST">
+      <p>
+        <input
+          type="search"
+          name="search"
+          placeholder="Search Box"
+          id="searchbox"
+        />
+      </p>
+    </form>
+    <!-----------------banner end------------>
+    <!----------------------body section start--------------------->
+    <div class="bood">
+      <h1>This is the main heading this is the main heading</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        similique, iusto praesentium deleniti inventore eius ratione debitis
+        voluptate harum illo quidem! Ad a est ea doloribus natus quibusdam
+        deleniti officia.
+      </p>
+      <div class="boxx fl">
+        <img class="immg" src="Images/1.png" height="40%" alt="" />
+        <h1>Main Data</h1>
+        <p class="parr">
+          This is the paragraph This is the paragraph This is the paragraph This
+          is the paragraph This is the paragraph This is the paragraph This is
+          the paragraph This is the paragraph This is the paragraph This is the
+          paragraph
+        </p>
+        <button class="hellbtn">Read More</button>
+      </div>
+      <div class="boxx new">
+        <img class="immg" src="Images/1.png" height="40%" alt="" />
+        <h1>Main Data</h1>
+        <p class="parr">
+          This is the paragraph This is the paragraph This is the paragraph This
+          is the paragraph This is the paragraph This is the paragraph This is
+          the paragraph This is the paragraph This is the paragraph This is the
+          paragraph
+        </p>
+        <button class="hellbtn">Read More</button>
+      </div>
+      <div class="boxx fr">
+        <img class="immg" src="Images/1.png" height="40%" alt="" />
+        <h1>Main Data</h1>
+        <p class="parr">
+          This is the paragraph This is the paragraph This is the paragraph This
+          is the paragraph This is the paragraph This is the paragraph This is
+          the paragraph This is the paragraph This is the paragraph This is the
+          paragraph
+        </p>
+        <button class="hellbtn">Read More</button>
+      </div>
+    </div>
+    <!----------------------body section end--------------------->
+    <!----------------------------nini  section start--------------------------->
+
+    <div class="minibox fl">
+      <img src="Images/1.png" height="100%" width="100%" alt="" />
+    </div>
+    <div class="minibox fr">
+      <h1>This is the heading this is the heading</h1>
+      <p id="papp">
+        This is the paragraph This is the paragraphThis is the paragraph This is
+        the paragraph This is the paragraph This is the paragraph This is the
+        paragraph This is the paragraph This is the paragraph This is the
+        paragraph This is the paragraph This is the paragraphThis is the
+        paragraph This is the paragraph This is the paragraph This is the
+        paragraph This is the paragraph This is the paragraph This is the
+        paragraph This is the paragraph
+      </p>
+    </div>
+    <div class="clr"></div>
+    <!-----------------------nini section end-------------------------------->
+    <div class="mainsection">
+      <br /><br />
+      <h1>this is then heading</h1>
+      <p>
+        This isthe paragraph This isthe paragraphThis isthe paragraphThis isthe
+        paragraphThis isthe paragraph This isthe paragraph
+      </p>
+      <div class="hellobox fll">
+        <img
+          src="Images/1.png"
+          height="100px"
+          width="200px"
+          class="immm"
+          alt=""
+        />
+        <h1 class="hhtext">Main tag</h1>
+        <p class="paramini">
+          This is the para mini This is the para mini This is the This is the
+          para mini This is the para mini para mini This is the para mini This
+          is the para mini This is the para mini
+        </p>
+      </div>
+
+      <div class="hellobox new">
+        <img
+          src="Images/1.png"
+          height="100px"
+          width="200px"
+          class="immm"
+          alt=""
+        />
+        <h1 class="hhtext">Main tag</h1>
+        <p class="paramini">
+          This is the para mini This is the para mini This is the This is the
+          para mini This is the para mini para mini This is the para mini This
+          is the para mini This is the para mini
+        </p>
+      </div>
+
+      <div class="hellobox frr">
+        <img
+          src="Images/1.png"
+          height="100px"
+          width="200px"
+          class="immm"
+          alt=""
+        />
+        <h1 class="hhtext">Main tag</h1>
+        <p class="paramini">
+          This is the para mini This is the para mini This is the This is the
+          para mini This is the para mini para mini This is the para mini This
+          is the para mini This is the para mini
+        </p>
+      </div>
+      <div class="clr"></div>
+
+      <div class="hellobox fll">
+        <img
+          src="Images/1.png"
+          height="100px"
+          width="200px"
+          class="immm"
+          alt=""
+        />
+        <h1 class="hhtext">Main tag</h1>
+        <p class="paramini">
+          This is the para mini This is the para mini This is the This is the
+          para mini This is the para mini para mini This is the para mini This
+          is the para mini This is the para mini
+        </p>
+      </div>
+
+      <div class="hellobox new">
+        <img
+          src="Images/1.png"
+          height="100px"
+          width="200px"
+          class="immm"
+          alt=""
+        />
+        <h1 class="hhtext">Main tag</h1>
+        <p class="paramini">
+          This is the para mini This is the para mini This is the This is the
+          para mini This is the para mini para mini This is the para mini This
+          is the para mini This is the para mini
+        </p>
+      </div>
+
+      <div class="hellobox frr">
+        <img
+          src="Images/1.png"
+          height="100px"
+          width="200px"
+          class="immm"
+          alt=""
+        />
+        <h1 class="hhtext">Main tag</h1>
+        <p class="paramini">
+          This is the para mini This is the para mini This is the This is the
+          para mini This is the para mini para mini This is the para mini This
+          is the para mini This is the para mini
+        </p>
+      </div>
+      <div class="clr"></div>
+      <p>
+        <button id="readmor">Read More</button>
+      </p>
+      <br />
+      <h1>This is the another heading</h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p id="pp">
+      This is the another paragraphThis is the another paragraphThis is the
+      another paragraph This is the another paragraph This is the another
+      paragraph
+    </p>
+    <div class="anotherdiv hhh flll fll">
+      <form action="" method="POST">
+        <p>
+          <input
+            class="hema"
+            type="text"
+            name="fname"
+            placeholder="Enter Your First Name"
+            id=""
+          />
+        </p>
+        <p>
+          <input
+            class="hema"
+            type="text"
+            name="lname"
+            placeholder="Enter Your Last Name"
+            id=""
+          />
+        </p>
+        <p>
+          <input
+            class="hema"
+            type="email"
+            name="emial"
+            placeholder="Enter Your Email"
+            id=""
+          />
+        </p>
+        <p>
+          <input
+            class="hema"
+            type="tel"
+            name="number"
+            placeholder="Enter Your Mobile Number"
+            id=""
+          />
+        </p>
+        <p>
+          <textarea
+            id="textarea"
+            placeholder="Enter Your Query"
+            name="text"
+            id=""
+            cols="50"
+            rows="7"
+          ></textarea>
+        </p>
+      </form>
+    </div>
+    <div class="anotherdiv frrr frr">
+      <img src="Images/1.png" height="100%" width="100%" alt="" />
+    </div>
+    <div class="clr"></div>
+    <div class="footer"></div>
+  </body>
+</html>
