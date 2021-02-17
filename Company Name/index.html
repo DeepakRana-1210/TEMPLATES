@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 100px;
+        width: 100%;
+        position: relative;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .logo1 {
+        height: 100px;
+        width: 250px;
+        position: absolute;
+        left: 4%;
+      }
+      #logo {
+        margin-top: 20px;
+        margin-left: 8%;
+      }
+      .logo2 {
+        height: 100px;
+        width: 350px;
+        position: absolute;
+        right: 4%;
+        line-height: 1.3;
+        padding-left: 2%;
+      }
+      nav {
+        height: 100px;
+        width: 50%;
+        position: absolute;
+        left: 22%;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        background-color: rgba(255, 60, 0, 0.61);
+        padding: 1% 2%;
+        font-size: 20px;
+        line-height: 5;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        color: whitesmoke;
+      }
+      /*********************************************************section start*********************/
+      section {
+        margin-top: 20px;
+      }
+      .text_section {
+        height: 80vh;
+        width: 50%;
+        background-color: lightblue;
+      }
+      .padd1 {
+        padding: 12% 2% 0% 15%;
+      }
+      .padd2 {
+        padding: 10% 15% 0% 2%;
+      }
+      .image_section {
+        height: 80vh;
+        width: 50%;
+        background-color: lightcoral;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      #main_text {
+        padding: 2.5%;
+        background-color: lightcoral;
+        border-radius: 10px;
+        color: whitesmoke;
+        font-weight: 800;
+        text-shadow: 1px 0px 0px black;
+      }
+      .text_section h1 {
+        font-size: 35px;
+      }
+      .text_section p {
+        line-height: 1.8;
+      }
+      .text_section button {
+        padding: 1.5%;
+        background-color: rgb(17, 134, 173);
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        font-weight: 700;
+        font-size: 20px;
+      }
+      .text_section button:hover {
+        background-color: royalblue;
+      }
+      /***********************section2 strat******************************************/
+      .mmain ul {
+        list-style-type: none;
+        line-height: 2;
+        font-weight: 700;
+      }
+      p {
+        font-size: 20px;
+      }
+
+      /**********************************this is for fun**************************/
+
+      .container {
+        height: 250px;
+        width: 60%;
+        margin: auto;
+      }
+      .box {
+        height: 200px;
+        width: 24.25%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        margin-top: 25px;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 4%;
+      }
+      .spantext {
+        color: rgb(88, 82, 82);
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .box p {
+        padding: 20%;
+        padding-top: 2%;
+      }
+      #mid {
+        text-align: center;
+        font-size: 50px;
+      }
+      .boxx {
+        height: 350px;
+        line-height: 1.4;
+      }
+      .center p {
+        text-align: center;
+        font-size: 20px;
+        padding: 8% 30% 0% 30%;
+      }
+      /****************************container2 start********************/
+      .container2 {
+        height: 500px;
+        width: 100%;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        margin-top: 20px;
+      }
+      .boxxx {
+        height: 450px;
+        width: 24.25%;
+        margin-top: 25px;
+        text-align: center;
+        background-color: rgba(240, 128, 128, 0.233);
+      }
+      .texttt {
+        padding-top: 6%;
+        font-size: 25px;
+        padding: 5%;
+        line-height: 1.2;
+      }
+      /**********************new one start********************/
+      .maincontainer {
+        height: auto;
+        width: 60%;
+        padding: 1% 0% 1% 0%;
+        margin: auto;
+        text-align: center;
+        line-height: 2;
+      }
+      .mainbox {
+        height: auto;
+        width: 32.66%;
+        margin-top: 30px;
+        line-height: 1;
+        font-size: 20px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        overflow: hidden;
+        border-radius: 10px;
+        padding: 0% 0% 1% 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <!----------------------------------header start--->
+    <header>
+      <div class="logo1">
+        <img src="Images/logo.png" id="logo" alt="logo_image" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#"> About Us</a></li>
+          <li><a href="#"> Services</a></li>
+          <li><a href="#"> Video</a></li>
+          <li><a href="#"> Blog</a></li>
+          <li><a href="#"> Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="logo2">
+        <br />
+        <h2>
+          Have Any Questions?
+          <br />
+          1234 567 89 10
+        </h2>
+      </div>
+    </header>
+    <!---------------------section start-->
+    <section>
+      <div class="text_section padd1 fl">
+        <br />
+        <span id="main_text">Big Data</span>
+        <br /><br /><br />
+        <h1>Applying Big Data & Analytics To Life</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+          mollitia voluptatum tempora, praesentium dolores quisquam ut fugiat
+          consequuntur accusamus deleniti! Nesciunt natus nulla error eos velit
+          quibusdam quaerat obcaecati hic.
+        </p>
+        <br />
+        <button>About Us</button>&nbsp;&nbsp;&nbsp;
+        <button>Contact Us</button>
+      </div>
+      <div class="image_section fr">
+        <img src="Images/1.png" height="100%" width="100%" alt="" />
+      </div>
+    </section>
+    <!-------------------section2 start-->
+    <section>
+      <div class="image_section fl">
+        <img src="Images/2.png" height="100%" width="100%" alt="" />
+      </div>
+      <div class="text_section padd2 fr">
+        <br />
+        <span id="main_text">Big Data</span>
+        <br /><br /><br />
+        <h1>About Us</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+          recusandae ipsum ipsam quam, doloribus perferendis accusamus at
+          voluptate nostrum explicabo!
+        </p>
+        <br />
+        <div class="mmain">
+          <ul>
+            <li>Advance Advisory Team</li>
+            <li>Professional Consulting Services</li>
+            <li>24/7 Support Help Center</li>
+            <li>Customer Service & Operations</li>
+          </ul>
+        </div>
+        <br />
+        <button>About Us</button>&nbsp;&nbsp;&nbsp;
+        <button>Contact Us</button>
+      </div>
+    </section>
+
+    <!-------------this is for fun-->
+
+    <div class="container">
+      <div class="box fl">
+        <span class="spantext">+550</span>
+        <p>
+          Click on the text in the block and enter the text you want to show.
+        </p>
+      </div>
+      <div class="box new">
+        <span class="spantext">+550</span>
+        <p>
+          Click on the text in the block and enter the text you want to show.
+        </p>
+      </div>
+      <div class="box new">
+        <span class="spantext">+550</span>
+        <p>
+          Click on the text in the block and enter the text you want to show.
+        </p>
+      </div>
+      <div class="box fr">
+        <span class="spantext">+550</span>
+        <p>
+          Click on the text in the block and enter the text you want to show.
+        </p>
+      </div>
+    </div>
+    <!-----------section start------------>
+
+    <section>
+      <h1 id="mid">How Does Big Data Works</h1>
+      <br />
+      <div class="container">
+        <div class="box boxx fl">
+          <img src="Images/3.png" height="100px" width="100px" alt="" />
+          <h3>Data for all your people</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+        <div class="box boxx new">
+          <img src="Images/3.png" height="100px" width="100px" alt="" />
+          <h3>A new breed of AI</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+        <div class="box boxx new">
+          <img src="Images/3.png" height="100px" width="100px" alt="" />
+          <h3>Analytics</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+        <div class="box boxx fr">
+          <img src="Images/3.png" height="100px" width="100px" alt="" />
+          <h3>Project Ready!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+      </div>
+      <div class="center">
+        <br /><br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quo
+          at repudiandae laudantium nisi dolores est assumenda, ducimus,
+          architecto omnis.
+        </p>
+        <br />
+      </div>
+    </section>
+    <!----------------------------container2 start-->
+    <div class="container2">
+      <div class="boxxx fl">
+        <img src="Images/data7-720x480.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="boxxx texttt new">
+        <h1>Generate Ideas</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+          voluptas.
+        </p>
+      </div>
+      <div class="boxxx new">
+        <img src="Images/data7-720x480.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="boxxx texttt fr">
+        <h1>Generate Ideas</h1>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+          voluptas.
+        </p>
+      </div>
+    </div>
+    <!-------------------------new one start-->
+    <br />
+    <div class="maincontainer">
+      <h1>Projects in Different Domain of Industry</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos tempora
+        quibusdam provident, iure facere, culpa consequatur neque vel ipsum at.
+      </p>
+      <div class="mainbox fl">
+        <img src="Images/4.png" height="200px" width="100%" alt="" />
+        <h2>Business Growth</h2>
+        <br />
+        <p>Analytics</p>
+      </div>
+      <div class="mainbox new">
+        <img src="Images/5.png" height="200px" width="100%" alt="" />
+        <h2>Business Growth</h2>
+        <br />
+        <p>Analytics</p>
+      </div>
+      <div class="mainbox fr">
+        <img src="Images/6.png" height="200px" width="100%" alt="" />
+        <h2>Business Growth</h2>
+        <br />
+        <p>Analytics</p>
+      </div>
+    </div>
+  </body>
+</html>

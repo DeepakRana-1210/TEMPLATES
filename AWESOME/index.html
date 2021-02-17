@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+
+      .clr {
+        clear: both;
+      }
+      .fourbox {
+        width: 24.25%;
+        margin-top: 60px;
+      }
+      .threebox {
+        width: 32.66%;
+        margin-top: 60px;
+        text-align: center;
+      }
+      h1 {
+        color: royalblue;
+      }
+      p {
+        color: rgba(0, 0, 0, 0.651);
+        font-family: sans-serif;
+      }
+      /******************header start*******************/
+      header {
+        height: 550px;
+        width: 100%;
+        background-color: #65cd00;
+        text-align: center;
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+      .logo {
+        height: 60px;
+        width: 200px;
+        line-height: 2;
+        position: absolute;
+        left: 20%;
+      }
+      nav {
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        right: 20%;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        color: whitesmoke;
+        line-height: 3.7;
+      }
+      nav ul li a:hover {
+        color: rgba(0, 0, 0, 0.699);
+        text-decoration: underline;
+      }
+      header .big_text,
+      header p {
+        padding: 0% 30%;
+        line-height: 1.2;
+      }
+      header .big_text {
+        font-size: 50px;
+        padding-top: 8%;
+        padding-bottom: 1%;
+      }
+      header p {
+        font-size: 20px;
+        line-height: 1.8;
+      }
+      /***********************box_container start********************/
+      .main {
+        height: auto;
+        width: 60%;
+        margin: auto;
+      }
+
+      .box {
+        padding: 1%;
+        font-size: 18px;
+        line-height: 1.5;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .box:hover {
+        margin-top: 50px;
+        transition: 0.3s;
+      }
+      .logoimg {
+        height: 50px;
+        width: 50px;
+        font-size: 35px;
+        padding: 1% 0% 0% 0%;
+        color: royalblue;
+        margin: auto;
+      }
+      .big {
+        font-size: 50px;
+        text-align: center;
+        padding: 6% 0% 0% 0%;
+      }
+      .box h1 {
+        font-size: 22px;
+        padding: 5% 0% 4% 0%;
+      }
+      /********************************image_container satrt***************/
+      .img_container {
+        height: 350px;
+        width: 50%;
+        margin-top: 120px;
+      }
+      .text_container {
+        height: 350px;
+        width: 50%;
+        padding-top: 2%;
+        margin-top: 120px;
+      }
+      .text_container h1 {
+        font-size: 28px;
+        padding: 4%;
+      }
+      .text_container p {
+        font-size: 18px;
+        padding: 0% 4%;
+      }
+      /********************banner start********************/
+      .banner {
+        padding: 1% 0% 2% 0%;
+        width: 100%;
+        background-color: lightblue;
+        text-align: center;
+        margin-top: 130px;
+      }
+      .banner h1 {
+        padding: 3% 2%;
+      }
+      .banner p {
+        padding: 0% 30%;
+        line-height: 1.3;
+      }
+      /*********************price_table start***************************/
+      ul {
+        list-style-type: none;
+      }
+      ul li {
+        line-height: 3;
+      }
+      .highlight {
+        background-color: lightblue;
+      }
+      .highlight h1 {
+        color: royalblue;
+        line-height: 0.5;
+      }
+      .highlight p {
+        background-color: rgb(63, 198, 243);
+        padding: 1%;
+        margin-top: 10px;
+      }
+      .btn {
+        padding: 3% 5%;
+        background-color: royalblue;
+        font-size: 16px;
+        color: whitesmoke;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+      .box:hover .btn {
+        margin-top: 35px;
+        background-color: #65cd00;
+        transition: 0.4s;
+      }
+      /**************************about us start****************/
+      .mainimagetext {
+        height: 150px;
+        width: 200px;
+        margin: auto;
+      }
+      /***************************footer start*****************/
+      footer {
+        height: 250px;
+        width: 100%;
+        background-color: yellowgreen;
+        margin-top: 100px;
+        padding-top: 5%;
+        text-align: center;
+      }
+
+      footer ul li {
+        display: inline;
+      }
+      footer ul li a {
+        font-size: 30px;
+        background: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-------------------header start-->
+    <header>
+      <section class="logo"><h1>Awesome</h1></section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
+      <h1 class="big_text">Awesome Template</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting
+      </p>
+    </header>
+    <!---------------------------------box_container start-->
+    <section class="main">
+      <h1 class="big">Features</h1>
+      <section class="box fourbox fl">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+        <h1>Responsive Design</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </section>
+      <section class="box fourbox new">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>Clean Code</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </section>
+      <section class="box fourbox new">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>24/7 Support</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </section>
+      <section class="box fourbox fr">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>Modern Design</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+      </section>
+      <section class="clr"></section>
+      <!-------------------------------ingcontainer start-->
+      <section class="img_container fl">
+        <img src="Images/Macbook.png" height="100%" width="100%" alt="" />
+      </section>
+      <section class="text_container fr">
+        <h1>Quick Install</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam,
+          quis nostrud.
+        </p>
+        <h1>Quick Install</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam,
+          quis nostrud.
+        </p>
+      </section>
+      <section class="clr"></section>
+      <!--------------------threeboxgreed start-------->
+      <h1 class="big">Services</h1>
+      <section class="box threebox fl">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>24/7 Support</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+      </section>
+      <section class="box threebox new">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>Quick Install</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+      </section>
+      <section class="box threebox fr">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>Easy to Customize</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+      </section>
+      <section class="clr"></section>
+      <section class="box threebox fl">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>Another Feature</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+      </section>
+      <section class="box threebox new">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>24/7 Support</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+      </section>
+      <section class="box threebox fr">
+        <section class="logoimg"><i class="fas fa-mobile"></i></section>
+
+        <h1>Quick Install</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s
+        </p>
+      </section>
+      <section class="clr"></section>
+      <!--------------------mainsatrt-->
+    </section>
+    <!--------------------mainend-->
+    <section class="banner">
+      <h1 class="big">Call to Action</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type
+      </p>
+    </section>
+    <!-------------------------new start-->
+    <h1 class="big">Price Table</h1>
+    <section class="main">
+      <section class="box threebox fl">
+        <section class="highlight">
+          <h1>$ 12 / month</h1>
+          <h1>Basic</h1>
+          <p>FREELANCER</p>
+        </section>
+        <ul>
+          <li>1000 video lessons</li>
+          <hr />
+          <li>Normal speed</li>
+          <hr />
+          <li>500 solved exercises</li>
+          <hr />
+          <li>300MB to save your code</li>
+          <hr />
+          <li>750 hours of support</li>
+          <hr />
+        </ul>
+        <button class="btn">Sign Up</button>
+      </section>
+      <section class="box threebox new">
+        <section class="highlight">
+          <h1>$ 12 / month</h1>
+          <h1>Basic</h1>
+          <p>FREELANCER</p>
+        </section>
+        <ul>
+          <li>1000 video lessons</li>
+          <hr />
+          <li>Normal speed</li>
+          <hr />
+          <li>500 solved exercises</li>
+          <hr />
+          <li>300MB to save your code</li>
+          <hr />
+          <li>750 hours of support</li>
+          <hr />
+        </ul>
+        <button class="btn">Sign Up</button>
+      </section>
+      <section class="box threebox fr">
+        <section class="highlight">
+          <h1>$ 12 / month</h1>
+          <h1>Basic</h1>
+          <p>FREELANCER</p>
+        </section>
+        <ul>
+          <li>1000 video lessons</li>
+          <hr />
+          <li>Normal speed</li>
+          <hr />
+          <li>500 solved exercises</li>
+          <hr />
+          <li>300MB to save your code</li>
+          <hr />
+          <li>750 hours of support</li>
+          <hr />
+        </ul>
+        <button class="btn">Sign Up</button>
+      </section>
+      <section class="clr"></section>
+      <!-----------------------------testemonial start-->
+      <h1 class="big">About us</h1>
+      <section class="box threebox fl">
+        <section class="mainimagetext">
+          <img src="images/1.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>John Doe</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod.
+        </p>
+      </section>
+      <section class="box threebox new">
+        <section class="mainimagetext">
+          <img src="images/2.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>John Doe</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod.
+        </p>
+      </section>
+      <section class="box threebox fr">
+        <section class="mainimagetext">
+          <img src="images/3.jpg" height="100%" width="100%" alt="" />
+        </section>
+        <h1>John Doe</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod.
+        </p>
+      </section>
+      <section class="clr"></section>
+    </section>
+    <!----------------Testimonial satrt-->
+    <section class="banner">
+      <h1 class="big">Testimonial</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type
+      </p>
+    </section>
+    <!------------footer start-->
+    <footer>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

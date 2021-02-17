@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f665390b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="jQuery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#navbtn").click(function () {
+          $("nav").slideToggle();
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+      }
+      .fl {
+        float: left;
+      }
+      .fr {
+        float: right;
+      }
+      .new {
+        float: left;
+        margin-left: 1%;
+      }
+      .clr {
+        clear: both;
+      }
+      .medium {
+        width: 90%;
+        margin: auto;
+        position: relative;
+      }
+      .medium h1 {
+        font-size: 40px;
+        padding-top: 3%;
+      }
+      #btn1 {
+        position: absolute;
+        left: 5%;
+        bottom: -7%;
+        background-color: orangered;
+        color: whitesmoke;
+        border-radius: 14px;
+        padding: 0% 2%;
+      }
+      #btn2 {
+        position: absolute;
+        left: 25%;
+        bottom: -7%;
+        width: 50%;
+      }
+      .nav {
+        height: 60px;
+        width: 100%;
+      }
+      .nav ul {
+        list-style-type: none;
+        text-align: center;
+      }
+      .nav ul li {
+        display: inline;
+        margin-left: 30px;
+      }
+      .nav ul li a {
+        font-size: 30px;
+        text-decoration: none;
+        line-height: 2;
+        border-radius: 14px;
+        background-color: orangered;
+        color: whitesmoke;
+        padding: 1% 3%;
+      }
+      #btn3 {
+        position: absolute;
+        right: 5%;
+        bottom: -7%;
+        color: whitesmoke;
+        border-radius: 14px;
+        background-color: orangered;
+        padding: 0% 2%;
+      }
+      /************************box start**************************/
+      .box {
+        height: 250px;
+        width: 24.25%;
+        background-color: lightblue;
+        position: relative;
+        margin-top: 40px;
+      }
+      .hoverdiv {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(58, 54, 54, 0.37);
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        line-height: 250px;
+        display: none;
+      }
+      .hoverdiv h1 {
+        font-size: 40px;
+        color: whitesmoke;
+      }
+      .box:hover .hoverdiv {
+        display: block;
+      }
+      /************************box end**************************/
+      /*****************************banner start*****************/
+      .banner {
+        height: 50vh;
+        width: 100%;
+        background-image: url(images/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        padding-top: 20vh;
+        margin-top: 50px;
+      }
+      .banner input {
+        height: 50px;
+        font-weight: 700;
+        padding: 0% 1%;
+        width: 8%;
+      }
+      #serchcontainer {
+        width: 25%;
+      }
+      /*****************************banner end*****************/
+      /*****************************header start******************/
+      header {
+        height: 8vh;
+        width: 100%;
+        position: relative;
+        background-color: rgba(59, 59, 59, 0.493);
+      }
+      .logo {
+        height: 8vh;
+        width: 200px;
+        position: absolute;
+        left: 5%;
+      }
+      .logo h1 {
+        font-size: 30px;
+        line-height: 8vh;
+        text-align: center;
+        color: whitesmoke;
+      }
+      nav {
+        height: 8vh;
+        width: 70%;
+        position: absolute;
+        right: 5%;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      nav ul li {
+        display: inline;
+        margin-left: 40px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 1% 2%;
+        font-weight: 700;
+        background-color: orange;
+        line-height: 8vh;
+        border-radius: 20px;
+        border: 2px solid whitesmoke;
+        color: white;
+      }
+      nav ul li a:hover {
+        background-color: royalblue;
+        border: 2px solid whitesmoke;
+      }
+      #navbtn {
+        display: none;
+      }
+      /*****************************header end******************/
+
+      /***************************footer start*********************/
+      footer {
+        height: 50vh;
+        padding: 2% 15%;
+        background-color: black;
+        margin-top: 140px;
+        color: whitesmoke;
+      }
+      .footerbox {
+        height: 100%;
+        width: 32.66%;
+        padding-left: 5%;
+        font-size: 20px;
+        padding-top: 5%;
+      }
+      .footerbox h1 {
+        padding: 0% 0% 5% 0%;
+      }
+      .footerbox p {
+        margin-top: 20px;
+      }
+      footer ul li {
+        line-height: 2;
+        margin-top: 10px;
+      }
+      footer #iconul li {
+        display: inline;
+      }
+      footer #iconul li a {
+        text-decoration: none;
+        padding: 2%;
+      }
+      footer #iconul li a i {
+        color: whitesmoke;
+        font-size: 50px;
+      }
+      footer #iconul li a i:hover {
+        color: royalblue;
+      }
+      /***************************footer end*********************/
+
+      /**********************************media query satrt**************************/
+      @media (max-width: 1200px) {
+        .box {
+          height: 400px;
+          width: 49%;
+          float: none;
+          margin: none;
+        }
+        .hoverdiv {
+          padding-top: 18%;
+        }
+        .bbfl {
+          float: left;
+        }
+        .bbfr {
+          float: right;
+        }
+        .bbclr {
+          clear: both;
+        }
+        #btn1 {
+          bottom: -100px;
+        }
+        #btn2 {
+          bottom: -100px;
+        }
+        #btn3 {
+          bottom: -100px;
+        }
+        .footerbox p{font-size: 18px;}
+      }
+      @media (max-width: 800px) {
+        .box {
+          width: 100%;
+        }
+        .hoverdiv {
+          padding-top: 8%;
+        }
+        nav {
+          height: 50vh;
+          background-color: rgba(0, 0, 0, 0.568);
+          width: 100%;
+          right: 0px;
+          top: 8vh;
+          padding-top: 4%;
+          display: none;
+        }
+        nav ul {
+          text-align: center;
+        }
+        nav ul li {
+          display: block;
+        }
+        nav ul li a {
+          padding: 4% 35%;
+          line-height: 100px;
+          background-color:orange);
+          color: royalblue;
+        }
+        nav ul li a:hover{color: whitesmoke;}
+        #navbtn {
+          position: absolute;
+          right: 20px;
+          top: 10px;
+          display: block;
+          font-size: 50px;
+          color: white;
+        }
+        .banner input {
+          width: 20%;
+          margin-top: 10px;
+        }
+        #serchcontainer {
+          width: 80%;
+        }
+        footer {height: 100vh;
+         margin: none;padding: 0;
+          margin-top: 220px;
+        }
+        .footerbox {
+          float: none;
+          height: auto;
+          margin: auto;
+          margin-top: 30px;
+          width: 100%;
+          border-bottom: 2px solid whitesmoke;
+          padding-bottom: 5%;
+        }
+        .footerbox p{font-size: 16px;}
+        #btn1 {
+          padding: 1%;
+        }
+        #btn2 {
+          padding: 0%;
+          bottom: -170px;
+        }
+        #btn2 a {
+          font-size: 45px;
+        }
+        #btn3 {
+          padding: 1%;
+        }
+      }
+      /**********************************media query end**************************/
+    </style>
+  </head>
+  <body>
+    <!---------------------------header start-->
+    <!---------------------------header end-->
+    <header>
+      <section class="logo"><h1>Catolog-Z</h1></section>
+      <nav>
+        <ul>
+          <li><a href="#"> Photos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#"> About</a></li>
+          <li><a href="#"> Contact</a></li>
+        </ul>
+      </nav>
+      <section id="navbtn"><i class="fas fa-bars"></i></section>
+    </header>
+    <!-----------------banner start-->
+    <section class="banner">
+      <form action="" method="POST">
+        <p>
+          <input
+            type="search"
+            name="search"
+            placeholder="Search "
+            id="serchcontainer"
+          />
+          <input type="submit" value="Search" />
+        </p>
+      </form>
+    </section>
+    <!-----------------banner end-->
+    <section class="medium">
+      <!------------------------------------bix start-->
+      <h1>Latest Photos</h1>
+      <section class="box bbfl fl">
+        <img src="images/2.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr new">
+        <img src="images/3.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="bbclr"></section>
+      <section class="box bbfl new">
+        <img src="images/4.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr fr">
+        <img src="images/5.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <section class="bbclr"></section>
+
+      <section class="box bbfl fl">
+        <img src="images/2.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr new">
+        <img src="images/3.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="bbclr"></section>
+      <section class="box bbfl new">
+        <img src="images/4.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr fr">
+        <img src="images/5.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <section class="bbclr"></section>
+      <section class="box bbfl fl">
+        <img src="images/2.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr new">
+        <img src="images/3.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="bbclr"></section>
+      <section class="box bbfl new">
+        <img src="images/4.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr fr">
+        <img src="images/5.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <section class="bbclr"></section>
+      <section class="box bbfl fl">
+        <img src="images/2.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr new">
+        <img src="images/3.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="bbclr"></section>
+      <section class="box bbfl new">
+        <img src="images/4.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="box bbfr fr">
+        <img src="images/5.jpg" height="100%" width="100%" alt="" />
+        <section class="hoverdiv">
+          <h1>Clock</h1>
+        </section>
+      </section>
+      <section class="clr"></section>
+      <section class="bbclr"></section>
+      <section id="btn1">
+        <h1>Previous</h1>
+      </section>
+      <section id="btn2">
+        <section class="nav">
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+          </ul>
+        </section>
+      </section>
+      <section id="btn3">
+        <h1>Next</h1>
+      </section>
+
+      <!------------------------------------bix start-->
+    </section>
+    <section class="clr"></section>
+    <!----------------------footer start-->
+    <footer>
+      <section class="footerbox fl">
+        <h1>About Catalog-Z</h1>
+        <p>
+          Catalog-Z is free Bootstrap 5 Alpha 2 HTML Template for video and
+          photo websites. You can freely use this TemplateMo layout for a
+          front-end integration with any kind of CMS website.
+        </p>
+        <p>Copyright 2020 Catalog-Z Company. All rights reserved.</p>
+      </section>
+      <section class="footerbox new">
+        <h1>Our Links</h1>
+        <ul>
+          <li>Advertise</li>
+          <li>Support</li>
+          <li>Our Company</li>
+          <li>Contact</li>
+        </ul>
+      </section>
+
+      <section class="footerbox fr">
+        <ul id="iconul">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+          </li>
+        </ul>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+        <p>Designed by TemplateMo</p>
+      </section>
+      <section class="clr"></section>
+    </footer>
+    <!----------------------footer end-->
+  </body>
+</html>
